@@ -1,10 +1,14 @@
 <div *ngIf="response" class="jumbotron">
     <h2 class="h2-responsive text-capitalize">{{response.label}}</h2>
     <p class="lead">{{efo}}</p>
-    <p *ngIf="response.synonyms"> <span class="badge badge-primary" *ngFor="let i of response.synonyms | slice:0:3">{{i}}</span></p>
+    <p *ngIf="response.synonyms"> 
+        <span class="badge badge-primary" *ngFor="let i of response.synonyms | slice:0:3">{{i}}</span></p>
+    <p *ngIf="parents">EFO parents: 
+        <span class="badge indigo text-capitalize" *ngFor="let i of parents"> 
+            <a [routerLink]="['/disease/'+i.short_form]" class="light-link">{{i.label}}</a> </span>
     <hr class="my-2">
     <p>{{response.description[0]}}
     </p>
-    <p>Associated targets: {{associations}}
+    <p >Associated targets: <span *ngIf="associations==10000">></span>{{associations}}
     </p>
 </div>

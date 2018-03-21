@@ -30,6 +30,7 @@ import { Hotnet2VersionService } from './hotnet2-version.service';
 import { OtAssociationsService } from './ot-associations.service';
 import { QueueService } from './queue.service';
 import { Hotnet2ResultService } from './hotnet2-result.service';
+import { EfoParentsService } from './efo-parents.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,7 @@ import { Hotnet2ResultService } from './hotnet2-result.service';
     HttpModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [NavbarService, EfoService, Hotnet2VersionService, OtAssociationsService, QueueService, Hotnet2ResultService],
+  providers: [NavbarService, EfoService, Hotnet2VersionService, OtAssociationsService, QueueService, Hotnet2ResultService, EfoParentsService],
   bootstrap: [AppComponent],
   exports: [ NavbarComponent, LinksComponent, LogoComponent],
 })

@@ -1,7 +1,9 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { EfoService } from '../efo.service';
+import { EfoParentsService } from '../efo-parents.service';
 import { OtAssociationsService } from '../ot-associations.service';
 import { EFO } from '../efo-summary';
+import { EFOParent } from '../efo-parent';
 import { SlicePipe } from '@angular/common';
 
 @Component({
@@ -11,22 +13,24 @@ import { SlicePipe } from '@angular/common';
 })
 export class DiseaseSummaryComponent implements OnInit {
   @Input() efo: string;
-  response: EFO;  
+  response: EFO;
+  parents: EFOParent[];
   associations: number;
 
-  constructor(private efoService : EfoService, private otAssociationsService : OtAssociationsService) { }
+  constructor(private efoService : EfoService, private efoParentsService : EfoParentsService, private otAssociationsService : OtAssociationsService) { }
 
   ngOnInit() { }
 
   //reload summary information every time efo changes  
   ngOnChanges() {
     this.getPost();
+    this.getParents();
     if (!this.response) {
       this.response = {
         label: "Not Found",
         synonyms: [""],
         description: ["The EFO code given was not found in the EFO lookup service."]
-      }
+      };
     }
   }
 
@@ -39,6 +43,13 @@ export class DiseaseSummaryComponent implements OnInit {
         .subscribe(result => this.associations = result,
                 error => console.log("Error :: " + error)
         )
+  }
+  
+  getParents(): void {
+        this.efoParentsService.getPost(this.efo)
+        .subscribe(result => this.parents = result,
+                error => console.log("Error :: " + error)
+        );
   }
 }
 
