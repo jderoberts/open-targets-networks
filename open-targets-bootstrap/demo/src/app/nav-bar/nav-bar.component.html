@@ -1,0 +1,15 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+    <logo>
+        <a class="navbar-brand" href="#">Open Targets:  Subnetworks</a>
+    </logo>
+    <links class="justify-content-between">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active waves-light" routerLink="home" mdbRippleRadius>Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link waves-light" routerLink="about" mdbRippleRadius>About</a>
+        </div>
+        <form class="form-inline waves-light"  name="pop" mdbTooltip="Invalid EFO code" placement="left" 
+            triggers="" [isOpen]="!valid_efo" (submit)="onSubmit($event)">
+            <input class="form-control mr-sm-2" type="text" [(ngModel)]="search_parameter" name="search-input" placeholder="Search">
+        </form>
+    </links>
+</mdb-navbar>

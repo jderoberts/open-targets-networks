@@ -1,0 +1,11 @@
+{
+  "data" : {
+    "subn1":["a","b","c","g","h","i"],
+    "subn2":["d","e","f"],
+    "subn3":["j","k","l"]
+  },
+  "version" : "9.2.4",
+  "disease" : "EFO_999",
+  "network" : "stringdb",
+  "algorithm" : "hotnet2"
+}

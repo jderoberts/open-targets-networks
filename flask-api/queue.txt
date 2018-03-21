@@ -1,0 +1,6 @@
+EFO_1001511 stringdb hotnet2
+EFO_1001511 omnipath hotnet2
+EFO_0003885 omnipath hotnet2
+EFO_0003885 stringdb hotnet2
+EFO_0000707 omnipath hotnet2
+EFO_0000707 stringdb hotnet2

@@ -1,0 +1,10 @@
+<div *ngIf="response" class="jumbotron">
+    <h2 class="h2-responsive text-capitalize">{{response.label}}</h2>
+    <p class="lead">{{efo}}</p>
+    <p *ngIf="response.synonyms"> <span class="badge badge-primary" *ngFor="let i of response.synonyms | slice:0:3">{{i}}</span></p>
+    <hr class="my-2">
+    <p>{{response.description[0]}}
+    </p>
+    <p>Associated targets: {{associations}}
+    </p>
+</div>

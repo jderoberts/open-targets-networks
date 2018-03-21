@@ -1,0 +1,10 @@
+<div>
+    <p class="text-muted">This is a container to be displayed if no results are found on the system, with the option to
+        add the desired disease/network combination to a queue. E.g.:
+    </p>
+    <p class="lead">No results were found for {{efo}} from network {{network}}.  Add to queue?
+    </p>
+    <button type="button" (click)="onClick()" class="btn btn-primary waves-light" mdbRippleRadius>Queue</button>
+    <p class="lead" *ngIf="queued == 'Added to queue'">{{efo}}-{{network}} was added to queue</p>
+    <p class="lead" *ngIf="queued == 'Already queued'">{{efo}}-{{network}} has already been queued.</p>
+</div>
