@@ -17,7 +17,7 @@ export class NavBarComponent implements OnInit {
   }
 
   onSubmit(event) {
-    if (/^EFO_[0-9]{7}$/.test(this.search_parameter)) {
+    if (/^EFO_[0-9]{7}$/.test(this.search_parameter)||/^Orphanet_[0-9]{6}$/.test(this.search_parameter)) {
       this.valid_efo = true;
       this.router.navigate(['/disease/',this.search_parameter]);
       //this.search_parameter = "";

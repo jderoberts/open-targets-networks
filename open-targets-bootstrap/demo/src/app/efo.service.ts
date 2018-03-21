@@ -8,13 +8,15 @@ import { EFO } from "./efo-summary";
 @Injectable()
 export class EfoService {
 
-  private url = "https://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252F";
-
+  private url_efo = "https://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252F";
+  private url_orphanet = "https://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.orpha.net%252FORDO%252F";
   constructor(private http: Http) { }
   
   getPost(code: string) : Observable<EFO> {
-    return this.http
-	.get(this.url+code)
+	let url = this.url_efo;
+	if (code.substring(0,5) == "Orpha"){ url = this.url_orphanet};
+	return this.http
+	.get(url+code)
 	.map((response: Response) => {
 		return <EFO>response.json();
 	}).catch(this.handleError);

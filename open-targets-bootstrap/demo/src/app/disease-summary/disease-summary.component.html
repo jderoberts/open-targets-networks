@@ -7,7 +7,7 @@
         <span class="badge indigo text-capitalize" *ngFor="let i of parents"> 
             <a [routerLink]="['/disease/'+i.short_form]" class="light-link">{{i.label}}</a> </span>
     <hr class="my-2">
-    <p>{{response.description[0]}}
+    <p *ngIf="response.description">{{response.description[0]}}
     </p>
     <p >Associated targets: <span *ngIf="associations==10000">></span>{{associations}}
     </p>
