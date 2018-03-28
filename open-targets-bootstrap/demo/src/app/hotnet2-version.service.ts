@@ -7,7 +7,8 @@ import { Hotnet2Response } from "./hotnet2-response";
 @Injectable()
 export class Hotnet2VersionService {
 
-  private url = "http://localhost:5000/version/";
+  //private url = "http://localhost:5000/version/";
+  private url = "/api/version/";
 
   constructor(private http: Http) { }
 

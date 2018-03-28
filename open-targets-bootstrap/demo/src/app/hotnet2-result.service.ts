@@ -7,7 +7,8 @@ import { Hotnet2Result } from "./hotnet2-result";
 @Injectable()
 export class Hotnet2ResultService {
 
-  private url = "http://localhost:5000/subn/";
+  //private url = "http://localhost:5000/subn/";
+  private url = "/api/subn/"; //needed for remote host
 
   constructor(private http: Http) { }
 

@@ -16,7 +16,7 @@ def simple_heatfile(disease) :
     """
     ot = OpenTargetsClient()
     all_associations = ot.filter_associations(disease = disease)
-    with open('../heatfiles/heatfile','w') as outfile:
+    with open('./data/heatfile','w') as outfile:
         for i, r in enumerate(all_associations):
             outfile.write("{} {}\n".format(r['target']['id'], r['association_score']['overall']))
 

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { EfoService } from '../efo.service';
 import { EfoParentsService } from '../efo-parents.service';
+import { EfoChildrenService } from '../efo-children.service';
 import { OtAssociationsService } from '../ot-associations.service';
 import { EFO } from '../efo-summary';
 import { EFOParent } from '../efo-parent';
@@ -15,16 +16,21 @@ export class DiseaseSummaryComponent implements OnInit {
   @Input() efo: string;
   response: EFO;
   parents: EFOParent[];
+  children: EFOParent[];
   associations: number;
 
-  constructor(private efoService : EfoService, private efoParentsService : EfoParentsService, private otAssociationsService : OtAssociationsService) { }
+  constructor(private efoService : EfoService, private efoParentsService : EfoParentsService, 
+      private efoChildrenService : EfoChildrenService, private otAssociationsService : OtAssociationsService) { }
 
   ngOnInit() { }
 
   //reload summary information every time efo changes  
   ngOnChanges() {
+    this.parents = null;
+    this.children = null;
     this.getPost();
     this.getParents();
+    this.getChildren();
     if (!this.response) {
       this.response = {
         label: "Not Found",
@@ -48,6 +54,13 @@ export class DiseaseSummaryComponent implements OnInit {
   getParents(): void {
         this.efoParentsService.getPost(this.efo)
         .subscribe(result => this.parents = result,
+                error => console.log("Error :: " + error)
+        );
+  }
+
+  getChildren(): void {
+        this.efoChildrenService.getPost(this.efo)
+        .subscribe(result => this.children = result,
                 error => console.log("Error :: " + error)
         );
   }

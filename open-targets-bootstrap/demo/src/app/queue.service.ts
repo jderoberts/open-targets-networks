@@ -6,7 +6,8 @@ import "rxjs/Rx";
 @Injectable()
 export class QueueService {
 
-private url = "http://localhost:5000/queue/";
+  //private url = "http://localhost:5000/queue/";
+  private url = "/api/queue/";
 
   constructor(private http: Http) { }
 

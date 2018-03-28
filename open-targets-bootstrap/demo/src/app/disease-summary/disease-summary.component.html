@@ -6,6 +6,9 @@
     <p *ngIf="parents">EFO parents: 
         <span class="badge indigo text-capitalize" *ngFor="let i of parents"> 
             <a [routerLink]="['/disease/'+i.short_form]" class="light-link">{{i.label}}</a> </span>
+    <p *ngIf="children">EFO children:
+        <span class="badge indigo text-capitalize" *ngFor="let i of children">
+            <a [routerLink]="['/disease/'+i.short_form]" class="light-link">{{i.label}}</a> </span>
     <hr class="my-2">
     <p *ngIf="response.description">{{response.description[0]}}
     </p>
