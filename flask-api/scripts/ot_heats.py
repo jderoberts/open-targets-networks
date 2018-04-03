@@ -29,7 +29,7 @@ def full_heatfile(disease, network) :
     network = source network (stringdb or omnipath)
     """
     #Read in network info frame
-    idFrame = pd.read_csv('../networks/'+network+'IDFrame.csv')
+    idFrame = pd.read_csv('./networks/'+network+'IDFrame.csv')
     idFrame = idFrame.set_index('geneID')    
     ot = OpenTargetsClient()
     all_associations = ot.filter_associations(disease = disease)
@@ -38,9 +38,9 @@ def full_heatfile(disease, network) :
     for i, r in enumerate(all_associations):
         assocFrame.loc[len(assocFrame)] = [r['target']['id'], r['association_score']['overall']]
     #Join with sample data
-    idFrame = idFrame.join(assocFrame.set_index('geneID'), how='left').fillna(0)    
+    idFrame = idFrame.join(assocFrame.set_index('geneID'), how='left').fillna(0.0000000001)
     #Output to heatfile
-    with open('../heatfiles/heatfile','w') as outfile:
+    with open('./data/heatfile','w') as outfile:
         for index, row in idFrame.iterrows():
             if isinstance(index, basestring):
                 outfile.write("{} {}\n".format(index,row['score']))

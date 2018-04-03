@@ -52,7 +52,8 @@ with open(hierarchy+'/version.json','w') as vfile :
     vfile.write('{"version":'+'"{}"'.format(ot_v)+',"permutations":'+'"{}"'.format(permutations)+'}')
 
 #%% generate heatfile for given EFO disease code
-ot_heats.simple_heatfile(arguments.disease)
+#ot_heats.simple_heatfile(arguments.disease)
+ot_heats.full_heatfile(arguments.disease, arguments.network)
 
 #%% convert to heats json
 makeHeatFile.run(makeHeatFile.get_parser().parse_args(
