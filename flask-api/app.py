@@ -25,7 +25,7 @@ def get_version_file(disease,network,algorithm):
 def get_result_file(disease,network,algorithm):
     json_data = "{}"
     try :
-        with open('data/{}/{}/{}/{}-score/viz-data.json'.format(disease,network,algorithm,network)) as json_file:
+        with open('data/{}/{}/{}/connected-output.json'.format(disease,network,algorithm)) as json_file:
             json_data = json.load(json_file)
     except IOError :
         abort(404, "results file not found")

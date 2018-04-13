@@ -1,3 +1,4 @@
 <app-subnetworks-queue *ngIf="!response" [efo]="efo" [network]="network"></app-subnetworks-queue>
 <app-subnetworks-summary *ngIf="response" [response]="response"></app-subnetworks-summary>
-<app-subnetworks-vis *ngIf="response" [response]="response" [efo]="efo" [network]="network"></app-subnetworks-vis>
+<!-- <app-subnetworks-vis *ngIf="response" [efo]="efo" [network]="network"></app-subnetworks-vis> -->
+<app-vis *ngIf="response" [efo]="efo" [network]="network"></app-vis>

@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-between">
+<div class="flex-column">
+<div id="filters" class="card card-body" style="width:220px;">
+  <h4 class="card-title">Filter scores:</h4>
+  <span><input type="checkbox" id="myCheckbox1" value="known_drug" (change)="updateScore()"> Known Drugs</span>
+  <span><input type="checkbox" id="myCheckbox2" value="rna_expression" (change)="updateScore()"> RNA Expression</span>
+  <span><input type="checkbox" id="myCheckbox3" value="somatic_mutation" (change)="updateScore()"> Somatic Mutations</span>
+  <span><input type="checkbox" id="myCheckbox4" value="genetic_association" (change)="updateScore()"> Genetic Associations</span>
+  <span><input type="checkbox" id="myCheckbox5" value="literature" (change)="updateScore()"> Literature</span>
+  <span><input type="checkbox" id="myCheckbox6" value="animal_model" (change)="updateScore()"> Animal Models</span>
+  <span><input type="checkbox" id="myCheckbox7" value="affected_pathway" (change)="updateScore()"> Affected Pathways</span>
+</div>
+<br>
+<div id="matrix-legend" class="matrix-legend-layout-h">
+  <span class="matrix-legend-from">0</span>
+  <span class="matrix-legend-item clearfix" *ngFor="let item of scalecolors">
+    <span class="matrix-legend-background" [ngStyle]="{'background':item}"></span>
+  </span>
+  <span class="matrix-legend-to">1</span>
+</div>
+<br>
+<br>
+</div>
+
+<div id="graph">
+  <svg id="graphsvg" width="700" height="500">
+  </svg>
+</div>
+
+<div id="details" class="card card-body" style="width:250px;max-width:250px;height:450px">
+  <h4 class="card-title">Association Details: <span *ngIf="selectedNode">{{selectedNode.label}}</span></h4>
+  <div *ngIf="selectedNode">
+    <p>Total Association: {{selectedNode.assoc | number:'1.1-5'}}</p>
+    <p>Known Drug: {{selectedNode.known_drug | number:'1.1-5'}}</p>
+    <p>RNA Expression: {{selectedNode.rna_expression | number:'1.1-5'}}</p>
+    <p>Somatic Mutation: {{selectedNode.somatic_mutation | number:'1.1-5'}}</p>
+    <p>Genetic Association: {{selectedNode.genetic_association | number:'1.1-5'}}</p>
+    <p>Literature: {{selectedNode.literature | number:'1.1-5'}}</p>
+    <p>Animal Model: {{selectedNode.animal_model | number:'1.1-5'}}</p>
+    <p>Affected Pathway: {{selectedNode.affected_pathway | number:'1.1-5'}}</p>
+    <a href="https://www.targetvalidation.org/evidence/{{selectedNode.id}}/{{efo}}" target="_blank">Open Targets Evidence</a>
+  </div>
+</div>
+</div>

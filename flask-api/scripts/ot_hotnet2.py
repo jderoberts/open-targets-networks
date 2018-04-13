@@ -41,6 +41,9 @@ parser.add_argument(
 )
 arguments = parser.parse_args()
 
+beta_dict = {"omnipath" : "0.42",
+             "stringdb" : "0.34"}
+
 #%% generate directory structure for parameters given
 hierarchy='/home/jde_roberts3/open-targets-networks/flask-api/data/{}/{}/hotnet2'.format(arguments.disease,arguments.network)
 
@@ -52,8 +55,8 @@ with open(hierarchy+'/version.json','w') as vfile :
     vfile.write('{"version":'+'"{}"'.format(ot_v)+',"permutations":'+'"{}"'.format(permutations)+'}')
 
 #%% generate heatfile for given EFO disease code
-#ot_heats.simple_heatfile(arguments.disease)
-ot_heats.full_heatfile(arguments.disease, arguments.network)
+ot_heats.simple_heatfile(arguments.disease)
+#ot_heats.full_heatfile(arguments.disease, arguments.network)
 
 #%% convert to heats json
 makeHeatFile.run(makeHeatFile.get_parser().parse_args(
@@ -64,8 +67,8 @@ makeHeatFile.run(makeHeatFile.get_parser().parse_args(
 
 #%% make output dir and run HotNet2 algorithm
 HotNet2.run(HotNet2.get_parser().parse_args(
-        ['-nf','./networks/{}/{}_ppr_0.45.h5'.format(arguments.network,arguments.network),
-         '-pnp','./networks/{}/permuted/{}_ppr_0.45_##NUM##.h5'.format(arguments.network,arguments.network),
+        ['-nf','./networks/{}/{}_ppr_{}.h5'.format(arguments.network,arguments.network,beta_dict[arguments.network]),
+         '-pnp','./networks/{}/permuted/{}_ppr_{}_##NUM##.h5'.format(arguments.network,arguments.network,beta_dict[arguments.network]),
          '-hf','./data/heatfile.json',
          '-np','{}'.format(permutations),
          '-o','./data/{}/{}/hotnet2'.format(arguments.disease,arguments.network),

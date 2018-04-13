@@ -16,7 +16,8 @@ export class Hotnet2ResultService {
     return this.http
         .get(this.url+efo+"/"+network+"/hotnet2")
         .map((response: Response) => {
-                return response.json();
+                console.log(response.json()['subnetworks']);
+                return response.json()['subnetworks'];
         }).catch(this.handleError);
   }
 

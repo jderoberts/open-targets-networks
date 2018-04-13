@@ -11,7 +11,6 @@ with open(api_home+'queue.txt','r') as queue :
         params = line.rstrip().split(' ')
         jobs.append((params[0],params[1],params[2]))
 #%% for each result where hotnet2 : 
-#fix to import ot_hotnet2 instead
 for job in jobs :
     if job[2] == "hotnet2":
         print "{}-{} scheduled for hotnet2".format(job[0],job[1])

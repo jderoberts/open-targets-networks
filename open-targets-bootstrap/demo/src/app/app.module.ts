@@ -32,6 +32,9 @@ import { QueueService } from './queue.service';
 import { Hotnet2ResultService } from './hotnet2-result.service';
 import { EfoParentsService } from './efo-parents.service';
 import { EfoChildrenService } from './efo-children.service';
+import { VisComponent } from './vis/vis.component';
+import { VisGraphComponent } from './vis-graph/vis-graph.component';
+import { OtEvidenceService } from './ot-evidence.service';
 
 @NgModule({
   declarations: [
@@ -47,6 +50,8 @@ import { EfoChildrenService } from './efo-children.service';
     SubnetworksQueueComponent,
     SubnetworksComponent,
     SubnetworksDefaultComponent,
+    VisComponent,
+    VisGraphComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,7 +63,7 @@ import { EfoChildrenService } from './efo-children.service';
     HttpModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [NavbarService, EfoService, Hotnet2VersionService, OtAssociationsService, QueueService, Hotnet2ResultService, EfoParentsService, EfoChildrenService],
+  providers: [NavbarService, EfoService, Hotnet2VersionService, OtAssociationsService, QueueService, Hotnet2ResultService, EfoParentsService, EfoChildrenService, OtEvidenceService],
   bootstrap: [AppComponent],
   exports: [ NavbarComponent, LinksComponent, LogoComponent],
 })
