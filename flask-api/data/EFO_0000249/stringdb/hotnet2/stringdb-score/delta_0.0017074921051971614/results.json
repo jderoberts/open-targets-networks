@@ -1,48 +1,48 @@
 {
     "statistics": {
         "2": {
-            "expected": 69.99, 
-            "pval": 0.99, 
+            "expected": 69.21, 
+            "pval": 1.0, 
             "observed": 51
         }, 
         "3": {
-            "expected": 27.86, 
-            "pval": 1.0, 
+            "expected": 27.98, 
+            "pval": 0.99, 
             "observed": 19
         }, 
         "4": {
-            "expected": 13.74, 
-            "pval": 0.77, 
+            "expected": 14.26, 
+            "pval": 0.83, 
             "observed": 12
         }, 
         "5": {
-            "expected": 8.35, 
-            "pval": 0.65, 
+            "expected": 8.85, 
+            "pval": 0.77, 
             "observed": 8
         }, 
         "6": {
-            "expected": 5.96, 
-            "pval": 0.39, 
+            "expected": 6.26, 
+            "pval": 0.4, 
             "observed": 7
         }, 
         "7": {
-            "expected": 4.24, 
-            "pval": 0.4, 
+            "expected": 4.58, 
+            "pval": 0.52, 
             "observed": 5
         }, 
         "8": {
-            "expected": 3.23, 
-            "pval": 0.37, 
+            "expected": 3.59, 
+            "pval": 0.49, 
             "observed": 4
         }, 
         "9": {
-            "expected": 2.47, 
-            "pval": 0.41, 
+            "expected": 2.83, 
+            "pval": 0.59, 
             "observed": 3
         }, 
         "10": {
-            "expected": 1.94, 
-            "pval": 0.23, 
+            "expected": 2.36, 
+            "pval": 0.43, 
             "observed": 3
         }
     }, 

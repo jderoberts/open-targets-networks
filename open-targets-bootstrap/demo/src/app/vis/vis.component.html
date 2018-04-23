@@ -1,3 +1,4 @@
+
 <app-vis-graph *ngIf="data" [data]="data[current]" [efo]="efo"></app-vis-graph>
 
 <nav *ngIf="data">
@@ -11,8 +12,73 @@
 
 <div *ngIf="data" id="subn-info" class="jumbotron">
   <p class="lead">Subnetwork summary information</p>
-  <p>Subnetwork size: {{data[current].size}}</p>
-  <p>Average association score: {{data[current].heat | number:'1.1-5'}}</p>
-  <p>Genes:</p>
-  <p><span class="badge indigo" *ngFor="let item of nodeList" [ngStyle]="{'margin-right':'10px'}">{{item}}</span></p>
+  <nav>
+    <ul class="pagination pagination-lg pg-blue">
+      <li class="page-item" [class.active]="summaryDiv == 'genes'">
+        <a class="page-link" style="font-size: 18px;"  mdbRippleRadius (click)="summaryDiv = 'genes'">Genes</a>
+      </li>
+      <li class="page-item" [class.active]="summaryDiv == 'drugs'">
+        <a class="page-link" style="font-size: 18px;" mdbRippleRadius (click)="summaryDiv = 'drugs'">Drugs</a>
+      </li>
+    </ul>
+  </nav>
+  <div *ngIf="summaryDiv == 'genes'">
+    <p>Subnetwork size: {{data[current].size}}</p>
+    <p>Average association score: {{data[current].heat | number:'1.1-5'}}</p>
+    <p>Genes:</p>
+    <p><span class="badge indigo" *ngFor="let item of nodeList" [ngStyle]="{'margin-right':'10px'}">{{item}}</span></p>
+  </div>
+  <div *ngIf="summaryDiv == 'drugs'">
+    <p>Drugs found: {{data[current].drugs.length}}</p>
+    <div class="d-flex flex-row">
+        <div style="margin-right: 50px;">
+          <label>Filter by disease:</label>
+          <select class="form-control" [(ngModel)]="indications_filter" [ngStyle]="{'width':'300px'}">
+              <option *ngFor="let item of diseaseList" [value]="item">{{item}}</option> 
+          </select>
+        </div>
+        <div>
+          <label>Display indications above phase:</label>
+          <select class="form-control" [(ngModel)]="min_trial_stage" [ngStyle]="{'width':'200px'}">
+            <option [value]="1">I</option>
+            <option [value]="2">II</option>
+            <option [value]="3">III</option>
+            <option [value]="4">IV</option>
+          </select>
+        </div>
+    </div>
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Targets</th>
+        <th>Type</th>
+        <th>Mechanism</th>
+        <th>Indications</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-template ngFor let-drug [ngForOf]="data[current].drugs">
+          <tr *ngIf="indFiltered(drug.diseases)">
+		<td><a href="{{drug.url}}" target="_blank">{{drug.name}}</a></td>
+		<td>
+			<span class="badge badge-table indigo" *ngFor="let item of drug.genes">{{item}}</span>
+		</td>
+		<td>{{drug.type}}</td>
+                <td><div *ngFor="let mech of drug.mechanisms">{{mech}}</div></td>
+		<td>
+			<div *ngFor="let item of drug.indications" >
+				<span *ngIf="trialCheck(item.stage);"
+					class="badge badge-table badge-{{trial_colour[item.stage]}}" >
+					<span class="text-capitalize"> {{item.efo_term}}</span>  ({{roman[item.stage]}})
+				</span>
+			</div>
+			<p class="muted" *ngIf="!drug.indications.length">None</p>
+		</td>
+           </tr>
+	</ng-template>
+      <tr *ngIf="!data[current].drugs"><td colspan=4>No drugs found for subnetwork</td></tr>
+    </tbody>
+    </table>
+  </div>
 </div>

@@ -1,0 +1,207 @@
+{
+    "statistics": {
+        "2": {
+            "expected": 8.12, 
+            "pval": 0.8, 
+            "observed": 7
+        }, 
+        "3": {
+            "expected": 3.47, 
+            "pval": 0.71, 
+            "observed": 3
+        }, 
+        "4": {
+            "expected": 1.64, 
+            "pval": 0.16, 
+            "observed": 3
+        }, 
+        "5": {
+            "expected": 1.11, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "6": {
+            "expected": 1.08, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "7": {
+            "expected": 1.05, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "8": {
+            "expected": 1.03, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "9": {
+            "expected": 1.01, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "10": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }
+    }, 
+    "components": [
+        [
+            "ENSG00000007171", 
+            "ENSG00000017427", 
+            "ENSG00000035862", 
+            "ENSG00000061918", 
+            "ENSG00000064012", 
+            "ENSG00000070404", 
+            "ENSG00000079435", 
+            "ENSG00000087088", 
+            "ENSG00000088832", 
+            "ENSG00000089250", 
+            "ENSG00000091831", 
+            "ENSG00000096717", 
+            "ENSG00000099991", 
+            "ENSG00000100299", 
+            "ENSG00000101439", 
+            "ENSG00000101846", 
+            "ENSG00000102265", 
+            "ENSG00000104368", 
+            "ENSG00000104899", 
+            "ENSG00000105329", 
+            "ENSG00000105550", 
+            "ENSG00000105974", 
+            "ENSG00000106366", 
+            "ENSG00000108064", 
+            "ENSG00000108443", 
+            "ENSG00000109471", 
+            "ENSG00000109819", 
+            "ENSG00000111424", 
+            "ENSG00000112964", 
+            "ENSG00000113140", 
+            "ENSG00000113520", 
+            "ENSG00000114739", 
+            "ENSG00000115008", 
+            "ENSG00000118271", 
+            "ENSG00000118523", 
+            "ENSG00000119899", 
+            "ENSG00000120129", 
+            "ENSG00000121691", 
+            "ENSG00000121989", 
+            "ENSG00000122194", 
+            "ENSG00000125378", 
+            "ENSG00000125538", 
+            "ENSG00000125845", 
+            "ENSG00000126351", 
+            "ENSG00000132639", 
+            "ENSG00000132693", 
+            "ENSG00000132906", 
+            "ENSG00000134363", 
+            "ENSG00000135414", 
+            "ENSG00000136244", 
+            "ENSG00000136807", 
+            "ENSG00000137752", 
+            "ENSG00000138207", 
+            "ENSG00000138379", 
+            "ENSG00000138722", 
+            "ENSG00000141510", 
+            "ENSG00000142168", 
+            "ENSG00000143799", 
+            "ENSG00000143839", 
+            "ENSG00000145192", 
+            "ENSG00000146678", 
+            "ENSG00000148053", 
+            "ENSG00000150907", 
+            "ENSG00000152402", 
+            "ENSG00000153113", 
+            "ENSG00000156709", 
+            "ENSG00000158125", 
+            "ENSG00000159640", 
+            "ENSG00000161533", 
+            "ENSG00000162344", 
+            "ENSG00000162711", 
+            "ENSG00000163631", 
+            "ENSG00000163956", 
+            "ENSG00000164116", 
+            "ENSG00000164136", 
+            "ENSG00000164305", 
+            "ENSG00000165731", 
+            "ENSG00000166311", 
+            "ENSG00000167670", 
+            "ENSG00000169083", 
+            "ENSG00000171105", 
+            "ENSG00000174697", 
+            "ENSG00000176697", 
+            "ENSG00000180210", 
+            "ENSG00000184481", 
+            "ENSG00000184557", 
+            "ENSG00000185359", 
+            "ENSG00000185652", 
+            "ENSG00000196136", 
+            "ENSG00000196218", 
+            "ENSG00000197386", 
+            "ENSG00000198793", 
+            "ENSG00000204389", 
+            "ENSG00000242689", 
+            "ENSG00000254647", 
+            "ENSG00000259384"
+        ], 
+        [
+            "ENSG00000109163", 
+            "ENSG00000121853", 
+            "ENSG00000144891", 
+            "ENSG00000147437"
+        ], 
+        [
+            "ENSG00000112658", 
+            "ENSG00000142871", 
+            "ENSG00000158022", 
+            "ENSG00000196588"
+        ], 
+        [
+            "ENSG00000030304", 
+            "ENSG00000188157"
+        ], 
+        [
+            "ENSG00000106113", 
+            "ENSG00000152266"
+        ], 
+        [
+            "ENSG00000117594", 
+            "ENSG00000133116"
+        ], 
+        [
+            "ENSG00000121807", 
+            "ENSG00000157005"
+        ]
+    ], 
+    "parameters": {
+        "display_name_file": null, 
+        "display_score_file": null, 
+        "deltas": [], 
+        "verbose": 1, 
+        "heat_permutations": 100, 
+        "num_cores": -1, 
+        "network_permutations": 50, 
+        "output_directory": "./data/EFO_1000653/stringdb/hotnet2", 
+        "heat_files": [
+            "./data/heatfile.json"
+        ], 
+        "output_hierarchy": false, 
+        "consensus_permutations": 0, 
+        "delta": 4.427350336416566e-05, 
+        "min_cc_size": 2, 
+        "network_files": [
+            "./networks/stringdb/stringdb_ppr_0.34.h5"
+        ], 
+        "network_name": "stringdb", 
+        "permuted_network_paths": [
+            "./networks/stringdb/permuted/stringdb_ppr_0.34_##NUM##.h5"
+        ], 
+        "heat_name": "score"
+    }, 
+    "sizes": {
+        "96": 1, 
+        "2": 4, 
+        "4": 2
+    }
+}

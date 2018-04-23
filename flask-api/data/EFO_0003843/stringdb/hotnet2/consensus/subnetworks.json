@@ -38,6 +38,25 @@
         }, 
         {
             "core": [
+                "ENSG00000082556", 
+                "ENSG00000151577", 
+                "ENSG00000116329", 
+                "ENSG00000150594", 
+                "ENSG00000050628", 
+                "ENSG00000179097", 
+                "ENSG00000112038", 
+                "ENSG00000069696", 
+                "ENSG00000149295", 
+                "ENSG00000135312", 
+                "ENSG00000184160", 
+                "ENSG00000118432", 
+                "ENSG00000163485", 
+                "ENSG00000181072"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
                 "ENSG00000185043", 
                 "ENSG00000145632"
             ], 
@@ -122,8 +141,8 @@
                 "ENSG00000135902", 
                 "ENSG00000160716", 
                 "ENSG00000138435", 
-                "ENSG00000108556", 
                 "ENSG00000163032", 
+                "ENSG00000108556", 
                 "ENSG00000170175", 
                 "ENSG00000101204"
             ], 
@@ -150,6 +169,7 @@
         {
             "core": [
                 "ENSG00000178473", 
+                "ENSG00000145708", 
                 "ENSG00000163794", 
                 "ENSG00000120088"
             ], 
@@ -160,6 +180,19 @@
                 "ENSG00000114923", 
                 "ENSG00000104267", 
                 "ENSG00000167434"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000131203", 
+                "ENSG00000132437", 
+                "ENSG00000189221", 
+                "ENSG00000069535", 
+                "ENSG00000139287", 
+                "ENSG00000130066", 
+                "ENSG00000093010", 
+                "ENSG00000123454"
             ], 
             "expansion": []
         }, 
@@ -253,17 +286,6 @@
         }, 
         {
             "core": [
-                "ENSG00000131203", 
-                "ENSG00000139287", 
-                "ENSG00000069535", 
-                "ENSG00000130066", 
-                "ENSG00000093010", 
-                "ENSG00000123454"
-            ], 
-            "expansion": []
-        }, 
-        {
-            "core": [
                 "ENSG00000140009", 
                 "ENSG00000111424"
             ], 
@@ -283,15 +305,22 @@
                 "ENSG00000104327"
             ], 
             "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000087085", 
+                "ENSG00000161217"
+            ], 
+            "expansion": []
         }
     ], 
     "deltas": [
-        0.0029720092091554146
+        0.0027313855535276233
     ], 
     "linkers": [], 
     "params": {
         "consensus_permutations": 0, 
-        "delta": 0.0015011687159538268, 
+        "delta": 0.0014049499877728522, 
         "deltas": [], 
         "display_name_file": null, 
         "display_score_file": null, 
@@ -302,7 +331,7 @@
         "heat_permutations": 100, 
         "min_cc_size": 2, 
         "network_files": [
-            "./networks/stringdb/stringdb_ppr_0.45.h5"
+            "./networks/stringdb/stringdb_ppr_0.34.h5"
         ], 
         "network_name": "stringdb", 
         "network_permutations": 50, 
@@ -310,54 +339,54 @@
         "output_directory": "./data/EFO_0003843/stringdb/hotnet2", 
         "output_hierarchy": false, 
         "permuted_network_paths": [
-            "./networks/stringdb/permuted/stringdb_ppr_0.45_##NUM##.h5"
+            "./networks/stringdb/permuted/stringdb_ppr_0.34_##NUM##.h5"
         ], 
         "verbose": 1
     }, 
     "stats": {
         "2": {
             "expected": 0.0, 
-            "observed": 29, 
+            "observed": 31, 
             "pval": 1.0
         }, 
         "3": {
             "expected": 0.0, 
-            "observed": 12, 
+            "observed": 13, 
             "pval": 1.0
         }, 
         "4": {
             "expected": 0.0, 
-            "observed": 7, 
+            "observed": 9, 
             "pval": 1.0
         }, 
         "5": {
             "expected": 0.0, 
-            "observed": 7, 
+            "observed": 8, 
             "pval": 1.0
         }, 
         "6": {
             "expected": 0.0, 
-            "observed": 7, 
+            "observed": 8, 
             "pval": 1.0
         }, 
         "7": {
             "expected": 0.0, 
-            "observed": 4, 
+            "observed": 6, 
             "pval": 1.0
         }, 
         "8": {
             "expected": 0.0, 
-            "observed": 4, 
+            "observed": 6, 
             "pval": 1.0
         }, 
         "9": {
             "expected": 0.0, 
-            "observed": 2, 
+            "observed": 3, 
             "pval": 1.0
         }, 
         "10": {
             "expected": 0.0, 
-            "observed": 2, 
+            "observed": 3, 
             "pval": 1.0
         }
     }

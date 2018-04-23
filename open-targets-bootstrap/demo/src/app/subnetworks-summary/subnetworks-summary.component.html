@@ -1,3 +1,6 @@
-<div>
-    <p class="lead">Subnetworks calculated based on data from OpenTargets release {{response.version}}, using {{response.permutations || '100'}} network permutations.</p>
+<div class="d-flex justify-content-between">
+    <p class="lead align-self-end">Subnetworks calculated based on data from OpenTargets release {{response.version}}, using {{response.permutations || '100'}} network permutations.</p>
+    <button type="button" (click)="onClick()" class="btn btn-primary waves-light" mdbRippleRadius>Refresh</button>
 </div>
+<p *ngIf="queued == 'Added to queue'">{{efo}}-{{network}} was added to queue</p>
+<p *ngIf="queued == 'Already queued'">{{efo}}-{{network}} has already been queued.</p>

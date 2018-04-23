@@ -9,6 +9,6 @@ https://github.com/ContinuumIO/anaconda-issues/issues/8182
 install build-essential (includes gcc) and python-dev
 install gfortran
 
-pip install python-igraph opentargets
+pip install python-igraph opentargets chembl_webresource_client
 
 npm install -g @angular/cli

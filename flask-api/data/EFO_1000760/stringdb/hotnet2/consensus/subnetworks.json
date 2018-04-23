@@ -41,6 +41,7 @@
                 "ENSG00000092009", 
                 "ENSG00000196262", 
                 "ENSG00000196689", 
+                "ENSG00000105835", 
                 "ENSG00000077092", 
                 "ENSG00000184160", 
                 "ENSG00000147437", 
@@ -71,30 +72,34 @@
         }, 
         {
             "core": [
-                "ENSG00000112115", 
-                "ENSG00000109471", 
-                "ENSG00000145777", 
-                "ENSG00000174697", 
-                "ENSG00000136244", 
-                "ENSG00000111537"
+                "ENSG00000143631", 
+                "ENSG00000167754"
             ], 
             "expansion": []
         }, 
         {
             "core": [
-                "ENSG00000143631", 
-                "ENSG00000167754"
+                "ENSG00000136244", 
+                "ENSG00000174697"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000109471", 
+                "ENSG00000145777", 
+                "ENSG00000111537"
             ], 
             "expansion": []
         }
     ], 
     "deltas": [
-        4.361381978106053e-05
+        4.6352223251765794e-05
     ], 
     "linkers": [], 
     "params": {
         "consensus_permutations": 0, 
-        "delta": 5.3318588202784975e-05, 
+        "delta": 5.9336268602951705e-05, 
         "deltas": [], 
         "display_name_file": null, 
         "display_score_file": null, 
@@ -105,7 +110,7 @@
         "heat_permutations": 100, 
         "min_cc_size": 2, 
         "network_files": [
-            "./networks/stringdb/stringdb_ppr_0.45.h5"
+            "./networks/stringdb/stringdb_ppr_0.34.h5"
         ], 
         "network_name": "stringdb", 
         "network_permutations": 50, 
@@ -113,14 +118,14 @@
         "output_directory": "./data/EFO_1000760/stringdb/hotnet2", 
         "output_hierarchy": false, 
         "permuted_network_paths": [
-            "./networks/stringdb/permuted/stringdb_ppr_0.45_##NUM##.h5"
+            "./networks/stringdb/permuted/stringdb_ppr_0.34_##NUM##.h5"
         ], 
         "verbose": 1
     }, 
     "stats": {
         "2": {
             "expected": 0.0, 
-            "observed": 5, 
+            "observed": 6, 
             "pval": 1.0
         }, 
         "3": {
@@ -130,17 +135,17 @@
         }, 
         "4": {
             "expected": 0.0, 
-            "observed": 3, 
+            "observed": 2, 
             "pval": 1.0
         }, 
         "5": {
             "expected": 0.0, 
-            "observed": 3, 
+            "observed": 2, 
             "pval": 1.0
         }, 
         "6": {
             "expected": 0.0, 
-            "observed": 2, 
+            "observed": 1, 
             "pval": 1.0
         }, 
         "7": {

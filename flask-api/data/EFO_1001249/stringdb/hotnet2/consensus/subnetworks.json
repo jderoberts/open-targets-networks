@@ -5,9 +5,23 @@
                 "ENSG00000073417", 
                 "ENSG00000171408", 
                 "ENSG00000184588", 
+                "ENSG00000172572", 
+                "ENSG00000138735", 
+                "ENSG00000154678", 
+                "ENSG00000112541", 
+                "ENSG00000105650", 
+                "ENSG00000156973", 
+                "ENSG00000139053", 
+                "ENSG00000185527", 
+                "ENSG00000132915", 
                 "ENSG00000113448", 
+                "ENSG00000160191", 
+                "ENSG00000152270", 
+                "ENSG00000186642", 
                 "ENSG00000205268", 
-                "ENSG00000105650"
+                "ENSG00000133256", 
+                "ENSG00000095464", 
+                "ENSG00000123360"
             ], 
             "expansion": []
         }, 
@@ -66,21 +80,43 @@
         }, 
         {
             "core": [
-                "ENSG00000112715", 
                 "ENSG00000254647", 
-                "ENSG00000017427"
+                "ENSG00000138722", 
+                "ENSG00000102265", 
+                "ENSG00000017427", 
+                "ENSG00000197766", 
+                "ENSG00000112715", 
+                "ENSG00000196611", 
+                "ENSG00000197561", 
+                "ENSG00000035862", 
+                "ENSG00000100985", 
+                "ENSG00000166670", 
+                "ENSG00000205542"
             ], 
             "expansion": []
         }, 
         {
             "core": [
-                "ENSG00000138722", 
-                "ENSG00000102265", 
-                "ENSG00000100985", 
-                "ENSG00000197766", 
-                "ENSG00000205542", 
-                "ENSG00000166670", 
-                "ENSG00000196611"
+                "ENSG00000163586", 
+                "ENSG00000174697", 
+                "ENSG00000130649", 
+                "ENSG00000198099", 
+                "ENSG00000170323", 
+                "ENSG00000186951", 
+                "ENSG00000073756", 
+                "ENSG00000157017", 
+                "ENSG00000144852", 
+                "ENSG00000114200", 
+                "ENSG00000143257", 
+                "ENSG00000132693", 
+                "ENSG00000186350", 
+                "ENSG00000025434", 
+                "ENSG00000117594", 
+                "ENSG00000109819", 
+                "ENSG00000132170", 
+                "ENSG00000101076", 
+                "ENSG00000136244", 
+                "ENSG00000163106"
             ], 
             "expansion": []
         }, 
@@ -125,6 +161,7 @@
                 "ENSG00000117984", 
                 "ENSG00000244734", 
                 "ENSG00000137033", 
+                "ENSG00000169245", 
                 "ENSG00000164867", 
                 "ENSG00000038945", 
                 "ENSG00000010610", 
@@ -171,6 +208,7 @@
                 "ENSG00000129465", 
                 "ENSG00000111057", 
                 "ENSG00000127666", 
+                "ENSG00000184216", 
                 "ENSG00000150782", 
                 "ENSG00000106144", 
                 "ENSG00000160654", 
@@ -188,25 +226,6 @@
         }, 
         {
             "core": [
-                "ENSG00000138735", 
-                "ENSG00000160191", 
-                "ENSG00000172572", 
-                "ENSG00000152270", 
-                "ENSG00000112541", 
-                "ENSG00000186642", 
-                "ENSG00000156973", 
-                "ENSG00000154678", 
-                "ENSG00000133256", 
-                "ENSG00000139053", 
-                "ENSG00000185527", 
-                "ENSG00000132915", 
-                "ENSG00000095464", 
-                "ENSG00000123360"
-            ], 
-            "expansion": []
-        }, 
-        {
-            "core": [
                 "ENSG00000126759", 
                 "ENSG00000100234", 
                 "ENSG00000154736", 
@@ -216,26 +235,9 @@
         }, 
         {
             "core": [
-                "ENSG00000163586", 
-                "ENSG00000143257", 
-                "ENSG00000144852", 
-                "ENSG00000132693", 
-                "ENSG00000186350", 
-                "ENSG00000117594", 
-                "ENSG00000109819", 
-                "ENSG00000186951", 
-                "ENSG00000101076", 
-                "ENSG00000132170", 
-                "ENSG00000174697", 
-                "ENSG00000114200", 
-                "ENSG00000136244", 
-                "ENSG00000157017"
-            ], 
-            "expansion": []
-        }, 
-        {
-            "core": [
+                "ENSG00000170266", 
                 "ENSG00000115850", 
+                "ENSG00000131471", 
                 "ENSG00000085662"
             ], 
             "expansion": []
@@ -304,9 +306,9 @@
         }, 
         {
             "core": [
-                "ENSG00000163106", 
-                "ENSG00000073756", 
-                "ENSG00000130649"
+                "ENSG00000177666", 
+                "ENSG00000100344", 
+                "ENSG00000101670"
             ], 
             "expansion": []
         }, 
@@ -335,6 +337,13 @@
             "core": [
                 "ENSG00000120659", 
                 "ENSG00000164761"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000038274", 
+                "ENSG00000145692"
             ], 
             "expansion": []
         }, 
@@ -369,12 +378,12 @@
         }
     ], 
     "deltas": [
-        0.00040705838011015664
+        0.00037401802659731316
     ], 
     "linkers": [], 
     "params": {
         "consensus_permutations": 0, 
-        "delta": 0.0006262325497968122, 
+        "delta": 0.0005752018126994371, 
         "deltas": [], 
         "display_name_file": null, 
         "display_score_file": null, 
@@ -385,7 +394,7 @@
         "heat_permutations": 100, 
         "min_cc_size": 2, 
         "network_files": [
-            "./networks/stringdb/stringdb_ppr_0.45.h5"
+            "./networks/stringdb/stringdb_ppr_0.34.h5"
         ], 
         "network_name": "stringdb", 
         "network_permutations": 50, 
@@ -393,19 +402,19 @@
         "output_directory": "./data/EFO_1001249/stringdb/hotnet2", 
         "output_hierarchy": false, 
         "permuted_network_paths": [
-            "./networks/stringdb/permuted/stringdb_ppr_0.45_##NUM##.h5"
+            "./networks/stringdb/permuted/stringdb_ppr_0.34_##NUM##.h5"
         ], 
         "verbose": 1
     }, 
     "stats": {
         "2": {
             "expected": 0.0, 
-            "observed": 28, 
+            "observed": 27, 
             "pval": 1.0
         }, 
         "3": {
             "expected": 0.0, 
-            "observed": 15, 
+            "observed": 14, 
             "pval": 1.0
         }, 
         "4": {
@@ -415,12 +424,12 @@
         }, 
         "5": {
             "expected": 0.0, 
-            "observed": 8, 
+            "observed": 7, 
             "pval": 1.0
         }, 
         "6": {
             "expected": 0.0, 
-            "observed": 8, 
+            "observed": 7, 
             "pval": 1.0
         }, 
         "7": {
@@ -430,17 +439,17 @@
         }, 
         "8": {
             "expected": 0.0, 
-            "observed": 6, 
+            "observed": 7, 
             "pval": 1.0
         }, 
         "9": {
             "expected": 0.0, 
-            "observed": 6, 
+            "observed": 7, 
             "pval": 1.0
         }, 
         "10": {
             "expected": 0.0, 
-            "observed": 6, 
+            "observed": 7, 
             "pval": 1.0
         }
     }

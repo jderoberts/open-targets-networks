@@ -11,6 +11,7 @@ import sys
 sys.path.append("hotnet2")
 import HotNet2
 import ot_heats
+import ot_output
 import makeHeatFile
 
 permutations = '50'
@@ -75,3 +76,7 @@ HotNet2.run(HotNet2.get_parser().parse_args(
          '-c','-1'
          ]))
 
+
+#%% post-processing step: ensure connected networks and add drug info
+
+ot_output.generateOutput(arguments.disease, arguments.network)

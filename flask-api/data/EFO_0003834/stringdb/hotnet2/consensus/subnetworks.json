@@ -24,6 +24,7 @@
                 "ENSG00000169245", 
                 "ENSG00000179218", 
                 "ENSG00000128604", 
+                "ENSG00000096968", 
                 "ENSG00000197405", 
                 "ENSG00000105397", 
                 "ENSG00000007908", 
@@ -103,12 +104,12 @@
         }
     ], 
     "deltas": [
-        2.3169440892039347e-05
+        2.235757210137672e-05
     ], 
     "linkers": [], 
     "params": {
         "consensus_permutations": 0, 
-        "delta": 2.8396982816047967e-05, 
+        "delta": 3.10605123261339e-05, 
         "deltas": [], 
         "display_name_file": null, 
         "display_score_file": null, 
@@ -119,7 +120,7 @@
         "heat_permutations": 100, 
         "min_cc_size": 2, 
         "network_files": [
-            "./networks/stringdb/stringdb_ppr_0.45.h5"
+            "./networks/stringdb/stringdb_ppr_0.34.h5"
         ], 
         "network_name": "stringdb", 
         "network_permutations": 50, 
@@ -127,7 +128,7 @@
         "output_directory": "./data/EFO_0003834/stringdb/hotnet2", 
         "output_hierarchy": false, 
         "permuted_network_paths": [
-            "./networks/stringdb/permuted/stringdb_ppr_0.45_##NUM##.h5"
+            "./networks/stringdb/permuted/stringdb_ppr_0.34_##NUM##.h5"
         ], 
         "verbose": 1
     }, 

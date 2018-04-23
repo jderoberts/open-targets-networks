@@ -97,6 +97,13 @@
         }, 
         {
             "core": [
+                "ENSG00000132965", 
+                "ENSG00000111144"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
                 "ENSG00000007908", 
                 "ENSG00000174059", 
                 "ENSG00000188404", 
@@ -144,6 +151,15 @@
         }, 
         {
             "core": [
+                "ENSG00000108823", 
+                "ENSG00000172554", 
+                "ENSG00000170624", 
+                "ENSG00000102683"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
                 "ENSG00000113448", 
                 "ENSG00000184588", 
                 "ENSG00000105650"
@@ -166,9 +182,10 @@
         }, 
         {
             "core": [
-                "ENSG00000108823", 
-                "ENSG00000172554", 
-                "ENSG00000170624"
+                "ENSG00000120907", 
+                "ENSG00000170214", 
+                "ENSG00000133019", 
+                "ENSG00000171873"
             ], 
             "expansion": []
         }, 
@@ -187,6 +204,13 @@
             "core": [
                 "ENSG00000129422", 
                 "ENSG00000159640"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000168418", 
+                "ENSG00000104848"
             ], 
             "expansion": []
         }, 
@@ -229,6 +253,13 @@
         }, 
         {
             "core": [
+                "ENSG00000187210", 
+                "ENSG00000144278"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
                 "ENSG00000152270", 
                 "ENSG00000172572"
             ], 
@@ -251,6 +282,7 @@
         {
             "core": [
                 "ENSG00000205403", 
+                "ENSG00000117335", 
                 "ENSG00000000971"
             ], 
             "expansion": []
@@ -264,12 +296,12 @@
         }
     ], 
     "deltas": [
-        0.003665679031626818
+        0.003355890044972723
     ], 
     "linkers": [], 
     "params": {
         "consensus_permutations": 0, 
-        "delta": 0.001460043776948947, 
+        "delta": 0.001382775415893244, 
         "deltas": [], 
         "display_name_file": null, 
         "display_score_file": null, 
@@ -280,7 +312,7 @@
         "heat_permutations": 100, 
         "min_cc_size": 2, 
         "network_files": [
-            "./networks/stringdb/stringdb_ppr_0.45.h5"
+            "./networks/stringdb/stringdb_ppr_0.34.h5"
         ], 
         "network_name": "stringdb", 
         "network_permutations": 50, 
@@ -288,24 +320,24 @@
         "output_directory": "./data/EFO_0000341/stringdb/hotnet2", 
         "output_hierarchy": false, 
         "permuted_network_paths": [
-            "./networks/stringdb/permuted/stringdb_ppr_0.45_##NUM##.h5"
+            "./networks/stringdb/permuted/stringdb_ppr_0.34_##NUM##.h5"
         ], 
         "verbose": 1
     }, 
     "stats": {
         "2": {
             "expected": 0.0, 
-            "observed": 26, 
+            "observed": 30, 
             "pval": 1.0
         }, 
         "3": {
             "expected": 0.0, 
-            "observed": 10, 
+            "observed": 12, 
             "pval": 1.0
         }, 
         "4": {
             "expected": 0.0, 
-            "observed": 8, 
+            "observed": 10, 
             "pval": 1.0
         }, 
         "5": {

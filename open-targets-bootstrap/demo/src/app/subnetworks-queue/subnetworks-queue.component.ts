@@ -22,7 +22,6 @@ export class SubnetworksQueueComponent implements OnInit {
   }
 
   onClick() {
-    console.log("This happens!");
     this.queueService.getPost(this.efo, this.network)
         .subscribe(result => this.queued = result,
                 error => console.log("Error :: " + error)
