@@ -1,0 +1,103 @@
+{
+    "statistics": {
+        "2": {
+            "expected": 2.25, 
+            "pval": 0.96, 
+            "observed": 2
+        }, 
+        "3": {
+            "expected": 1.31, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "4": {
+            "expected": 1.31, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "5": {
+            "expected": 1.31, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "6": {
+            "expected": 1.02, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "7": {
+            "expected": 0.99, 
+            "pval": 0.99, 
+            "observed": 1
+        }, 
+        "8": {
+            "expected": 0.99, 
+            "pval": 0.99, 
+            "observed": 1
+        }, 
+        "9": {
+            "expected": 0.99, 
+            "pval": 0.99, 
+            "observed": 1
+        }, 
+        "10": {
+            "expected": 0.98, 
+            "pval": 0.98, 
+            "observed": 1
+        }
+    }, 
+    "components": [
+        [
+            "ENSG00000046774", 
+            "ENSG00000049759", 
+            "ENSG00000102804", 
+            "ENSG00000106804", 
+            "ENSG00000113580", 
+            "ENSG00000114013", 
+            "ENSG00000118680", 
+            "ENSG00000121594", 
+            "ENSG00000146938", 
+            "ENSG00000156738", 
+            "ENSG00000185010", 
+            "ENSG00000196415", 
+            "ENSG00000197249", 
+            "ENSG00000197405", 
+            "ENSG00000223865", 
+            "ENSG00000231389", 
+            "ENSG00000237541"
+        ], 
+        [
+            "ENSG00000158955", 
+            "ENSG00000177283"
+        ]
+    ], 
+    "parameters": {
+        "display_name_file": null, 
+        "display_score_file": null, 
+        "deltas": [], 
+        "verbose": 1, 
+        "heat_permutations": 100, 
+        "num_cores": -1, 
+        "network_permutations": 50, 
+        "output_directory": "./data/EFO_0004826/omnipath/hotnet2", 
+        "heat_files": [
+            "./data/heatfile.json"
+        ], 
+        "output_hierarchy": false, 
+        "consensus_permutations": 0, 
+        "delta": 8.998489279187235e-06, 
+        "min_cc_size": 2, 
+        "network_files": [
+            "./networks/omnipath/omnipath_ppr_0.42.h5"
+        ], 
+        "network_name": "omnipath", 
+        "permuted_network_paths": [
+            "./networks/omnipath/permuted/omnipath_ppr_0.42_##NUM##.h5"
+        ], 
+        "heat_name": "score"
+    }, 
+    "sizes": {
+        "17": 1, 
+        "2": 1
+    }
+}

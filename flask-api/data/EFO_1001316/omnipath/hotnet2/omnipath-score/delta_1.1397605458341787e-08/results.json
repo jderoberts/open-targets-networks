@@ -1,0 +1,90 @@
+{
+    "statistics": {
+        "2": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "3": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "4": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "5": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "6": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "7": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "8": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "9": {
+            "expected": 1.0, 
+            "pval": 1.0, 
+            "observed": 1
+        }, 
+        "10": {
+            "expected": 0.0, 
+            "pval": 1.0, 
+            "observed": 0
+        }
+    }, 
+    "components": [
+        [
+            "ENSG00000005381", 
+            "ENSG00000105329", 
+            "ENSG00000113525", 
+            "ENSG00000115414", 
+            "ENSG00000124102", 
+            "ENSG00000136244", 
+            "ENSG00000147571", 
+            "ENSG00000169429", 
+            "ENSG00000185652"
+        ]
+    ], 
+    "parameters": {
+        "display_name_file": null, 
+        "display_score_file": null, 
+        "deltas": [], 
+        "verbose": 1, 
+        "heat_permutations": 100, 
+        "num_cores": -1, 
+        "network_permutations": 50, 
+        "output_directory": "./data/EFO_1001316/omnipath/hotnet2", 
+        "heat_files": [
+            "./data/heatfile.json"
+        ], 
+        "output_hierarchy": false, 
+        "consensus_permutations": 0, 
+        "delta": 1.1397605458341787e-08, 
+        "min_cc_size": 2, 
+        "network_files": [
+            "./networks/omnipath/omnipath_ppr_0.42.h5"
+        ], 
+        "network_name": "omnipath", 
+        "permuted_network_paths": [
+            "./networks/omnipath/permuted/omnipath_ppr_0.42_##NUM##.h5"
+        ], 
+        "heat_name": "score"
+    }, 
+    "sizes": {
+        "9": 1
+    }
+}

@@ -72,16 +72,24 @@ def generateOutput(efo, ntwk) :
                 if (ntwk == "omnipath") :
                     if (edge["source"]+"-"+edge["target"] in int_dict) :
                         type = int_dict[edge["source"]+"-"+edge["target"]]
-                        if (type[1]) :
-                            link["type"] = "activates"
-                        elif (type[2]) :
-                            link["type"] = "inhibits"
-                    elif (edge["target"]+"-"+edge["source"] in int_dict) :
+                        if (type[1] == "1" and type[2] == "1") :
+                            link["type"] = "dual"
+                        elif (type[1] == "1") :
+                            link["type"] = "stimulatory"
+                        elif (type[2] == "1") :
+                            link["type"] = "inhibitory"
+                        elif (type[0] == "1") :
+                            link["type"] = "directed"
+                    if (edge["target"]+"-"+edge["source"] in int_dict) :
                         type = int_dict[edge["target"]+"-"+edge["source"]]
-                        if (type[1]) :
-                            link["type"] = "rev-activates"
-                        elif (type[2]) :
-                            link["type"] = "rev-inhibits"
+                        if (type[1] == "1" and type[2] == "1") :
+                            link["reverse"] = "rev-dual"
+                        elif (type[1] == "1") :
+                            link["reverse"] = "rev-stimulatory"
+                        elif (type[2] == "1") :
+                            link["reverse"] = "rev-inhibitory"
+                        elif (type[0] == "1") :
+                            link["reverse"] = "rev-directed"
                 subn["links"].append(link)
             #ensure subnetwork is connected
             core = []
@@ -116,6 +124,7 @@ def generateOutput(efo, ntwk) :
                                     "target" : step[1],
                                     "type" : "manual"}
                             subn["links"].append(link)
+                        break #exit after first path - do not include ties
             #subnetwork now complete and connected
             #add summary info + add to output
             subn["size"] = len(subn["nodes"])
@@ -197,3 +206,4 @@ def getDrugs(subn, uniP) :
     #sort output by number of indications
     subn_drugs = sorted(subn_drugs, key=lambda d: len(d['indications']), reverse=True)
     return (subn_drugs, subn_diseases)
+

@@ -11,6 +11,7 @@ export class VisGraphComponent implements OnInit {
   scalecolors = ['#cbdcea','#98bad6','#6697c2','#3375ad','#005299'];
 
   svg;
+  defs;
   color;
   simulation;
   link;
@@ -20,6 +21,9 @@ export class VisGraphComponent implements OnInit {
   tool_tip;
   nodeList;
   selectedNode;
+  filters = 'scores';
+  arrows = true;
+  manual = true;
 
   @Input() efo;
   @Input() data;
@@ -30,9 +34,20 @@ export class VisGraphComponent implements OnInit {
   }
 
   ngOnChanges() {
-    this.svg = d3.select("svg");
+    this.svg = d3.select("#graphsvg");
     //clear out all nodes from previous data
     this.svg.selectAll("*").remove();
+
+    //add arrowhead definitions
+    this.defs = this.svg.append("svg:defs");
+    this.addMarker("directed","auto","#999");
+    this.addMarker("rev-directed","auto-start-reverse","#999");
+    this.addMarker("stimulatory","auto","#FF4136");
+    this.addMarker("rev-stimulatory","auto-start-reverse","#FF4136");
+    this.addMarker("inhibitory","auto","#0074D9");
+    this.addMarker("rev-inhibitory","auto-start-reverse","#0074D9");
+    this.addMarker("dual","auto","#B10DC9");
+    this.addMarker("rev-dual","auto-start-reverse","#B10DC9");
 
     var width = +this.svg.attr("width");
     var height = +this.svg.attr("height");
@@ -90,9 +105,20 @@ export class VisGraphComponent implements OnInit {
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
+      .attr("class", function(d) {
+        return (d.type == "manual") ? 'line-manual' : 'line-calculated';
+      })
       .attr("stroke-width", 3)
       .attr("stroke-dasharray", function(d) {
         return (d.type == "manual") ? '10,5' : '1,0';
+      })
+      .attr("marker-end", function(d) {
+        if (!d.type) { return null}
+        return "url(#"+d.type+")"
+      })
+      .attr("marker-start", function(d) {
+        if (!d.reverse) { return null}
+        return "url(#"+d.reverse+")"
       });
 
     this.node = this.zoom.selectAll(".nodes")
@@ -109,6 +135,7 @@ export class VisGraphComponent implements OnInit {
       .attr("id", (d) => {return "circle"+d.id;})
       .attr("r", 10)
       .attr("fill", (d) => { return this.color(d.assoc); })
+      .attr("class", (d) => { return (d.assoc == 0) ? "node-manual" : null} )
       .on("mouseover", this.tool_tip.show)
       .on("mouseout", this.tool_tip.hide)
       .on("click", (d)=>this.selectNode(d));
@@ -116,6 +143,7 @@ export class VisGraphComponent implements OnInit {
     this.node.append("text")
       .attr("dy", 5)
       .attr("dx", 10)
+      .attr("class", (d) => { return (d.assoc == 0) ? "text-manual" : null} )
       .text((d) => { return d.label; });
     
     this.simulation
@@ -126,21 +154,30 @@ export class VisGraphComponent implements OnInit {
       .links(graph.links);
   }
 
+  dragstarted(d) {
+    if (!d3.event.active) this.simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+
+    //d.fx = null;  //switch to these for pinned nodes - for figures
+    //d.fy = null;
+  }
+
   dragged(d) {
     d.fx = d3.event.x;
     d.fy = d3.event.y;
+
+    //d.x = d3.event.x;  //switch to these for pinned nodes - for figures
+    //d.y = d3.event.y;
   }
 
   dragended(d) {
     if (!d3.event.active) this.simulation.alphaTarget(0);
     d.fx = null;
     d.fy = null;
-  }
 
-  dragstarted(d) {
-    if (!d3.event.active) this.simulation.alphaTarget(0.3).restart();
-    d.fx = d.x;
-    d.fy = d.y;
+    //d.fx = d3.event.x;  //switch to these for pinned nodes - for figures
+    //d.fy = d3.event.y;
   }
 
   zoom_actions() {
@@ -191,4 +228,47 @@ export class VisGraphComponent implements OnInit {
     this.selectedNode = d;
     //this.zoom_handler.translateTo(this.zoom, 350, 250);
   }
+
+  toggleFilters(filters) {
+    this.filters = filters;
+  }
+
+  toggleArrows() {
+    this.arrows = this.arrows ? false : true;
+    if (this.arrows) {
+      d3.selectAll('.arrowhead').style("display","block");
+    } else {
+      d3.selectAll('.arrowhead').style("display","none");
+    }
+  }
+
+  toggleManual() {
+    this.manual = this.manual ? false : true;
+    if (this.manual) {
+      d3.selectAll('.line-manual').style("display","block");
+      d3.selectAll('.node-manual').style("display","block");
+      d3.selectAll('.text-manual').style("display","block");
+    } else {
+      d3.selectAll('.line-manual').style("display","none");
+      d3.selectAll('.node-manual').style("display","none");
+      d3.selectAll('.text-manual').style("display","none");
+    }
+  }
+
+  addMarker(markerid, direction, colour) {
+    this.defs.append("svg:marker")
+    .attr("id", markerid)
+    .attr("refX", 9)
+    .attr("refY", 3)
+    .attr("markerWidth", 7)
+    .attr("markerHeight", 8)
+    .attr("orient", direction)
+    .attr("stroke-linecap","butt")
+    .append("path")
+    .attr("class","arrowhead")
+    .attr("d", "M 1 1 L 4.5 3 L 1 5")
+    .style("stroke", colour)
+    .attr("fill","none");
+  }
+
 }

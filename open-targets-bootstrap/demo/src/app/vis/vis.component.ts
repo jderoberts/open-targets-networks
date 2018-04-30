@@ -20,6 +20,8 @@ export class VisComponent implements OnInit {
   min_trial_stage = 1;
   min_indications = 1;
   indications_filter = "";
+  targetSearch = false;
+  targetFound = "";
 
   constructor(private hotnet2ResultService : Hotnet2ResultService, private otEvidenceService: OtEvidenceService) { }
 
@@ -86,6 +88,28 @@ export class VisComponent implements OnInit {
                    },
                 error => console.log("Error :: " + error)
         );
+  }
+
+  findTarget(term) {
+    if (term == "") {
+        this.targetFound = "";
+    }
+    else {
+      term = term.toUpperCase();
+      var sub = -1;
+      for (var i = 0; i < this.data.length; i++) {
+        for (var j = 0; j < this.data[i].nodes.length; j++) {
+          if (term == this.data[i].nodes[j].id || term == this.data[i].nodes[j].label) {
+            sub = i;
+          }
+        }
+      }
+      if (sub != -1) {
+          this.targetFound = term + " was found in subnetwork " + (sub+1);
+      } else {
+          this.targetFound = term + " was not found in subnetworks";
+      } 
+    }
   }
 
   trialCheck(stage) {

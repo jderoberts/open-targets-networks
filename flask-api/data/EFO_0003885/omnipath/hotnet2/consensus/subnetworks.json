@@ -1,0 +1,379 @@
+{
+    "consensus": [
+        {
+            "core": [
+                "ENSG00000182132", 
+                "ENSG00000102057", 
+                "ENSG00000100346", 
+                "ENSG00000184408", 
+                "ENSG00000171385"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000171126", 
+                "ENSG00000026559", 
+                "ENSG00000170745", 
+                "ENSG00000158445", 
+                "ENSG00000178342"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000188379", 
+                "ENSG00000027697", 
+                "ENSG00000105397", 
+                "ENSG00000159128", 
+                "ENSG00000171855", 
+                "ENSG00000159110", 
+                "ENSG00000142166"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000116329", 
+                "ENSG00000112038"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000088832", 
+                "ENSG00000228716"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000143473", 
+                "ENSG00000140015"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000139193", 
+                "ENSG00000125726"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000006210", 
+                "ENSG00000168329"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000164171", 
+                "ENSG00000126353", 
+                "ENSG00000196611", 
+                "ENSG00000172270", 
+                "ENSG00000183813", 
+                "ENSG00000162692", 
+                "ENSG00000115232", 
+                "ENSG00000150093", 
+                "ENSG00000137673", 
+                "ENSG00000102962", 
+                "ENSG00000139626"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000196689", 
+                "ENSG00000163485", 
+                "ENSG00000128271", 
+                "ENSG00000111319", 
+                "ENSG00000118432"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000134352", 
+                "ENSG00000128342", 
+                "ENSG00000160712"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000177084", 
+                "ENSG00000101868"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000170017", 
+                "ENSG00000110448", 
+                "ENSG00000013725"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000108342", 
+                "ENSG00000164400", 
+                "ENSG00000170890", 
+                "ENSG00000119535"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000196189", 
+                "ENSG00000113249"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000079999", 
+                "ENSG00000073756"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000136531", 
+                "ENSG00000185313", 
+                "ENSG00000196876", 
+                "ENSG00000169432", 
+                "ENSG00000007314", 
+                "ENSG00000168356", 
+                "ENSG00000183873", 
+                "ENSG00000153253", 
+                "ENSG00000144285", 
+                "ENSG00000129159"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000134460", 
+                "ENSG00000104432", 
+                "ENSG00000147168", 
+                "ENSG00000138684", 
+                "ENSG00000100385"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000102524", 
+                "ENSG00000161955"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000227507", 
+                "ENSG00000067182", 
+                "ENSG00000226979"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000130037", 
+                "ENSG00000177301", 
+                "ENSG00000182255"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000204681", 
+                "ENSG00000054523", 
+                "ENSG00000136928"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000113302", 
+                "ENSG00000168811", 
+                "ENSG00000110944"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000176884", 
+                "ENSG00000116032", 
+                "ENSG00000273079", 
+                "ENSG00000198785", 
+                "ENSG00000183454"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000162924", 
+                "ENSG00000196126", 
+                "ENSG00000156738", 
+                "ENSG00000204287", 
+                "ENSG00000101017", 
+                "ENSG00000198502"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000184156", 
+                "ENSG00000117013", 
+                "ENSG00000053918", 
+                "ENSG00000075043"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000185811", 
+                "ENSG00000161405"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000179344", 
+                "ENSG00000237541"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000165995", 
+                "ENSG00000148408", 
+                "ENSG00000167535"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000048392", 
+                "ENSG00000171848", 
+                "ENSG00000167325"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000198286", 
+                "ENSG00000172175"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000121594", 
+                "ENSG00000120217"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000077097", 
+                "ENSG00000131747"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000164418", 
+                "ENSG00000149403"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000115310", 
+                "ENSG00000169783", 
+                "ENSG00000126861"
+            ], 
+            "expansion": []
+        }
+    ], 
+    "deltas": [
+        0.0042930111037219705
+    ], 
+    "linkers": [], 
+    "params": {
+        "consensus_permutations": 0, 
+        "delta": 0.0018866592979841447, 
+        "deltas": [], 
+        "display_name_file": null, 
+        "display_score_file": null, 
+        "heat_files": [
+            "./data/heatfile.json"
+        ], 
+        "heat_name": "score", 
+        "heat_permutations": 100, 
+        "min_cc_size": 2, 
+        "network_files": [
+            "./networks/omnipath/omnipath_ppr_0.42.h5"
+        ], 
+        "network_name": "omnipath", 
+        "network_permutations": 50, 
+        "num_cores": -1, 
+        "output_directory": "./data/EFO_0003885/omnipath/hotnet2", 
+        "output_hierarchy": false, 
+        "permuted_network_paths": [
+            "./networks/omnipath/permuted/omnipath_ppr_0.42_##NUM##.h5"
+        ], 
+        "verbose": 1
+    }, 
+    "stats": {
+        "2": {
+            "expected": 0.0, 
+            "observed": 35, 
+            "pval": 1.0
+        }, 
+        "3": {
+            "expected": 0.0, 
+            "observed": 20, 
+            "pval": 1.0
+        }, 
+        "4": {
+            "expected": 0.0, 
+            "observed": 11, 
+            "pval": 1.0
+        }, 
+        "5": {
+            "expected": 0.0, 
+            "observed": 9, 
+            "pval": 1.0
+        }, 
+        "6": {
+            "expected": 0.0, 
+            "observed": 4, 
+            "pval": 1.0
+        }, 
+        "7": {
+            "expected": 0.0, 
+            "observed": 3, 
+            "pval": 1.0
+        }, 
+        "8": {
+            "expected": 0.0, 
+            "observed": 2, 
+            "pval": 1.0
+        }, 
+        "9": {
+            "expected": 0.0, 
+            "observed": 2, 
+            "pval": 1.0
+        }, 
+        "10": {
+            "expected": 0.0, 
+            "observed": 2, 
+            "pval": 1.0
+        }
+    }
+}

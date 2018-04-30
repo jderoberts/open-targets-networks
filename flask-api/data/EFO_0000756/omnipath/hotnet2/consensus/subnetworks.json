@@ -1,0 +1,959 @@
+{
+    "consensus": [
+        {
+            "core": [
+                "ENSG00000182132", 
+                "ENSG00000102057"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000163161", 
+                "ENSG00000065057", 
+                "ENSG00000134899", 
+                "ENSG00000104884"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000132781", 
+                "ENSG00000116062", 
+                "ENSG00000095002"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000188488", 
+                "ENSG00000171564", 
+                "ENSG00000124491", 
+                "ENSG00000115718", 
+                "ENSG00000164344", 
+                "ENSG00000101981", 
+                "ENSG00000074695", 
+                "ENSG00000178726", 
+                "ENSG00000143278", 
+                "ENSG00000019991", 
+                "ENSG00000141753", 
+                "ENSG00000131187", 
+                "ENSG00000017427", 
+                "ENSG00000100312", 
+                "ENSG00000184500", 
+                "ENSG00000167642", 
+                "ENSG00000117601", 
+                "ENSG00000126218", 
+                "ENSG00000115457", 
+                "ENSG00000146678", 
+                "ENSG00000182752", 
+                "ENSG00000171557", 
+                "ENSG00000105707", 
+                "ENSG00000057593", 
+                "ENSG00000102996", 
+                "ENSG00000166145", 
+                "ENSG00000185010", 
+                "ENSG00000167751", 
+                "ENSG00000198734", 
+                "ENSG00000115884", 
+                "ENSG00000110799", 
+                "ENSG00000101000", 
+                "ENSG00000109758", 
+                "ENSG00000167779", 
+                "ENSG00000198670"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000129514", 
+                "ENSG00000147862"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000182054", 
+                "ENSG00000138413"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000188342", 
+                "ENSG00000047315", 
+                "ENSG00000168002", 
+                "ENSG00000102978", 
+                "ENSG00000177700", 
+                "ENSG00000100142", 
+                "ENSG00000105258", 
+                "ENSG00000005075", 
+                "ENSG00000163882", 
+                "ENSG00000144231"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000149735", 
+                "ENSG00000135346", 
+                "ENSG00000134200", 
+                "ENSG00000165409", 
+                "ENSG00000105641", 
+                "ENSG00000138039"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000164171", 
+                "ENSG00000101680", 
+                "ENSG00000106333", 
+                "ENSG00000130702", 
+                "ENSG00000114270", 
+                "ENSG00000168487", 
+                "ENSG00000168542", 
+                "ENSG00000154305", 
+                "ENSG00000162733", 
+                "ENSG00000163520", 
+                "ENSG00000091136", 
+                "ENSG00000135862"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000157613", 
+                "ENSG00000182158", 
+                "ENSG00000012174", 
+                "ENSG00000060566", 
+                "ENSG00000140943"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000159082", 
+                "ENSG00000183020"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000076242", 
+                "ENSG00000122512", 
+                "ENSG00000136492", 
+                "ENSG00000064933"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000241186", 
+                "ENSG00000163083", 
+                "ENSG00000121989"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000186265", 
+                "ENSG00000157873"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000189058", 
+                "ENSG00000130208", 
+                "ENSG00000158874"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000169676", 
+                "ENSG00000113327"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000164330", 
+                "ENSG00000198795", 
+                "ENSG00000196092", 
+                "ENSG00000197646", 
+                "ENSG00000188389", 
+                "ENSG00000120217"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000158169", 
+                "ENSG00000183161", 
+                "ENSG00000112039", 
+                "ENSG00000221829"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000010278", 
+                "ENSG00000104755"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000154589", 
+                "ENSG00000122852", 
+                "ENSG00000133661", 
+                "ENSG00000185303"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000137252", 
+                "ENSG00000121764"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000101972", 
+                "ENSG00000164754", 
+                "ENSG00000102974", 
+                "ENSG00000118007"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000173511", 
+                "ENSG00000118257", 
+                "ENSG00000119630", 
+                "ENSG00000145147", 
+                "ENSG00000112715", 
+                "ENSG00000182871", 
+                "ENSG00000169855", 
+                "ENSG00000185008", 
+                "ENSG00000063660", 
+                "ENSG00000102755"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000006071", 
+                "ENSG00000069431", 
+                "ENSG00000121361", 
+                "ENSG00000187486"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000143294", 
+                "ENSG00000161547"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000104219", 
+                "ENSG00000136026"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000102678", 
+                "ENSG00000070193"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000048392", 
+                "ENSG00000171848", 
+                "ENSG00000167325"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000107014", 
+                "ENSG00000248099", 
+                "ENSG00000171136", 
+                "ENSG00000171509", 
+                "ENSG00000173080", 
+                "ENSG00000172410", 
+                "ENSG00000182631", 
+                "ENSG00000133105"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000058085", 
+                "ENSG00000053747", 
+                "ENSG00000196878"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000139180", 
+                "ENSG00000147684", 
+                "ENSG00000131495", 
+                "ENSG00000164258", 
+                "ENSG00000184752"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000068323", 
+                "ENSG00000187098"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000073584", 
+                "ENSG00000163939", 
+                "ENSG00000117713", 
+                "ENSG00000130382", 
+                "ENSG00000099956", 
+                "ENSG00000066117"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000047932", 
+                "ENSG00000114646", 
+                "ENSG00000043591"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000169813", 
+                "ENSG00000169045"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000113070", 
+                "ENSG00000149968"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000170820", 
+                "ENSG00000131808"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000109738", 
+                "ENSG00000131089", 
+                "ENSG00000145888", 
+                "ENSG00000171723"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000197273", 
+                "ENSG00000070019", 
+                "ENSG00000044012"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000125657", 
+                "ENSG00000049249"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000075073", 
+                "ENSG00000166863", 
+                "ENSG00000169836", 
+                "ENSG00000115353"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000037280", 
+                "ENSG00000150630"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000143631", 
+                "ENSG00000140479"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000107807", 
+                "ENSG00000165092"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000103811", 
+                "ENSG00000168878"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000008517", 
+                "ENSG00000196415"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000159189", 
+                "ENSG00000173369"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000197181", 
+                "ENSG00000152670"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000157978", 
+                "ENSG00000169174", 
+                "ENSG00000007944", 
+                "ENSG00000166035", 
+                "ENSG00000130164", 
+                "ENSG00000084674", 
+                "ENSG00000138823"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000184937", 
+                "ENSG00000184675"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000123416", 
+                "ENSG00000258947"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000139574", 
+                "ENSG00000056291"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000178732", 
+                "ENSG00000169704"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000185811", 
+                "ENSG00000113851"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000159128", 
+                "ENSG00000027697", 
+                "ENSG00000057252"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000177084", 
+                "ENSG00000101868", 
+                "ENSG00000185686", 
+                "ENSG00000204344"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000085063", 
+                "ENSG00000176919", 
+                "ENSG00000157131", 
+                "ENSG00000021852", 
+                "ENSG00000113600"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000158125", 
+                "ENSG00000124557"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000136826", 
+                "ENSG00000067082"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000137731", 
+                "ENSG00000163399"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000163631", 
+                "ENSG00000138207", 
+                "ENSG00000107611"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000183044", 
+                "ENSG00000112294"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000184634", 
+                "ENSG00000111704", 
+                "ENSG00000101115"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000107165", 
+                "ENSG00000077498"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000147140", 
+                "ENSG00000104267"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000078399", 
+                "ENSG00000009709", 
+                "ENSG00000118058", 
+                "ENSG00000123080", 
+                "ENSG00000167548"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000163220", 
+                "ENSG00000143546"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000099783", 
+                "ENSG00000105388"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000066455", 
+                "ENSG00000162512", 
+                "ENSG00000122126", 
+                "ENSG00000257923"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000147655", 
+                "ENSG00000124145", 
+                "ENSG00000146374"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000185483", 
+                "ENSG00000134259", 
+                "ENSG00000156395"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000105568", 
+                "ENSG00000137713"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000112367", 
+                "ENSG00000103043"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000125820", 
+                "ENSG00000205927"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000081277", 
+                "ENSG00000134760"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000143387", 
+                "ENSG00000106538"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000041982", 
+                "ENSG00000130287", 
+                "ENSG00000127329"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000128609", 
+                "ENSG00000183648"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000159110", 
+                "ENSG00000142166"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000091879", 
+                "ENSG00000154188"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000106804", 
+                "ENSG00000039537"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000074527", 
+                "ENSG00000187323", 
+                "ENSG00000113763", 
+                "ENSG00000182168", 
+                "ENSG00000065320"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000078403", 
+                "ENSG00000141380"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000135218", 
+                "ENSG00000163295"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000175595", 
+                "ENSG00000154767"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000167985", 
+                "ENSG00000073578", 
+                "ENSG00000117118"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000100949", 
+                "ENSG00000188419"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000101200", 
+                "ENSG00000198049", 
+                "ENSG00000166148", 
+                "ENSG00000126895"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000070371", 
+                "ENSG00000073921"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000139329", 
+                "ENSG00000118113", 
+                "ENSG00000005884", 
+                "ENSG00000035862", 
+                "ENSG00000157766"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000110243", 
+                "ENSG00000167772", 
+                "ENSG00000175445", 
+                "ENSG00000277494", 
+                "ENSG00000087237"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000115286", 
+                "ENSG00000198888", 
+                "ENSG00000145494", 
+                "ENSG00000110717"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000171843", 
+                "ENSG00000172493", 
+                "ENSG00000183337"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000189060", 
+                "ENSG00000182185"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000084734", 
+                "ENSG00000106633"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000122705", 
+                "ENSG00000042753"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000137440", 
+                "ENSG00000113578"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000128191", 
+                "ENSG00000113360"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000164825", 
+                "ENSG00000112486"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000157193", 
+                "ENSG00000147852", 
+                "ENSG00000189056"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000257017", 
+                "ENSG00000177575", 
+                "ENSG00000244734"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000134460", 
+                "ENSG00000109471"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000038945", 
+                "ENSG00000168172"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000186895", 
+                "ENSG00000126778"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000126777", 
+                "ENSG00000170759"
+            ], 
+            "expansion": []
+        }
+    ], 
+    "deltas": [
+        0.014369520653939212
+    ], 
+    "linkers": [], 
+    "params": {
+        "consensus_permutations": 0, 
+        "delta": 0.009046767510873879, 
+        "deltas": [], 
+        "display_name_file": null, 
+        "display_score_file": null, 
+        "heat_files": [
+            "./data/heatfile.json"
+        ], 
+        "heat_name": "score", 
+        "heat_permutations": 100, 
+        "min_cc_size": 2, 
+        "network_files": [
+            "./networks/omnipath/omnipath_ppr_0.42.h5"
+        ], 
+        "network_name": "omnipath", 
+        "network_permutations": 50, 
+        "num_cores": -1, 
+        "output_directory": "./data/EFO_0000756/omnipath/hotnet2", 
+        "output_hierarchy": false, 
+        "permuted_network_paths": [
+            "./networks/omnipath/permuted/omnipath_ppr_0.42_##NUM##.h5"
+        ], 
+        "verbose": 1
+    }, 
+    "stats": {
+        "2": {
+            "expected": 0.0, 
+            "observed": 105, 
+            "pval": 1.0
+        }, 
+        "3": {
+            "expected": 0.0, 
+            "observed": 45, 
+            "pval": 1.0
+        }, 
+        "4": {
+            "expected": 0.0, 
+            "observed": 28, 
+            "pval": 1.0
+        }, 
+        "5": {
+            "expected": 0.0, 
+            "observed": 16, 
+            "pval": 1.0
+        }, 
+        "6": {
+            "expected": 0.0, 
+            "observed": 9, 
+            "pval": 1.0
+        }, 
+        "7": {
+            "expected": 0.0, 
+            "observed": 6, 
+            "pval": 1.0
+        }, 
+        "8": {
+            "expected": 0.0, 
+            "observed": 5, 
+            "pval": 1.0
+        }, 
+        "9": {
+            "expected": 0.0, 
+            "observed": 4, 
+            "pval": 1.0
+        }, 
+        "10": {
+            "expected": 0.0, 
+            "observed": 4, 
+            "pval": 1.0
+        }
+    }
+}

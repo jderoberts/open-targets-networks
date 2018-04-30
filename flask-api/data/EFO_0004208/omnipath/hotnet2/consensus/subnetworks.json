@@ -1,0 +1,366 @@
+{
+    "consensus": [
+        {
+            "core": [
+                "ENSG00000112033", 
+                "ENSG00000131408", 
+                "ENSG00000025434"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000134853", 
+                "ENSG00000162434", 
+                "ENSG00000132639", 
+                "ENSG00000174564", 
+                "ENSG00000127318", 
+                "ENSG00000178562", 
+                "ENSG00000145777", 
+                "ENSG00000186810", 
+                "ENSG00000169248", 
+                "ENSG00000114013", 
+                "ENSG00000169245", 
+                "ENSG00000183709", 
+                "ENSG00000142224", 
+                "ENSG00000112164", 
+                "ENSG00000010610", 
+                "ENSG00000226979", 
+                "ENSG00000016402", 
+                "ENSG00000120217", 
+                "ENSG00000111537", 
+                "ENSG00000078098", 
+                "ENSG00000100292", 
+                "ENSG00000163599", 
+                "ENSG00000125538", 
+                "ENSG00000137462", 
+                "ENSG00000127666", 
+                "ENSG00000188389", 
+                "ENSG00000182393", 
+                "ENSG00000183813", 
+                "ENSG00000179934", 
+                "ENSG00000138755", 
+                "ENSG00000081237", 
+                "ENSG00000271503", 
+                "ENSG00000197635", 
+                "ENSG00000196396", 
+                "ENSG00000078747", 
+                "ENSG00000136869", 
+                "ENSG00000223865", 
+                "ENSG00000111536", 
+                "ENSG00000197110", 
+                "ENSG00000169194", 
+                "ENSG00000232810", 
+                "ENSG00000275302", 
+                "ENSG00000185436", 
+                "ENSG00000164485", 
+                "ENSG00000169429", 
+                "ENSG00000112592", 
+                "ENSG00000171855", 
+                "ENSG00000146072", 
+                "ENSG00000096968", 
+                "ENSG00000204264", 
+                "ENSG00000044524", 
+                "ENSG00000103313", 
+                "ENSG00000102962", 
+                "ENSG00000091592", 
+                "ENSG00000121594", 
+                "ENSG00000240065", 
+                "ENSG00000111087", 
+                "ENSG00000162692", 
+                "ENSG00000126456", 
+                "ENSG00000160683", 
+                "ENSG00000179344", 
+                "ENSG00000185359", 
+                "ENSG00000138378", 
+                "ENSG00000277632", 
+                "ENSG00000107562", 
+                "ENSG00000205755", 
+                "ENSG00000113580", 
+                "ENSG00000162892", 
+                "ENSG00000087245", 
+                "ENSG00000189403"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000258839", 
+                "ENSG00000101440", 
+                "ENSG00000115138"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000204632", 
+                "ENSG00000204592", 
+                "ENSG00000134539"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000249437", 
+                "ENSG00000117560", 
+                "ENSG00000170542", 
+                "ENSG00000165806", 
+                "ENSG00000100453", 
+                "ENSG00000137033", 
+                "ENSG00000128683", 
+                "ENSG00000042832", 
+                "ENSG00000088832", 
+                "ENSG00000115602", 
+                "ENSG00000138814", 
+                "ENSG00000099991"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000159640", 
+                "ENSG00000093010"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000136160", 
+                "ENSG00000164251", 
+                "ENSG00000106366", 
+                "ENSG00000149782", 
+                "ENSG00000124205", 
+                "ENSG00000078401", 
+                "ENSG00000180210", 
+                "ENSG00000151617", 
+                "ENSG00000156052"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000164400", 
+                "ENSG00000105472", 
+                "ENSG00000049130"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000100823", 
+                "ENSG00000096717"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000165471", 
+                "ENSG00000224389", 
+                "ENSG00000244731"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000165240", 
+                "ENSG00000005381", 
+                "ENSG00000047457"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000135077", 
+                "ENSG00000168961"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000147571", 
+                "ENSG00000145040", 
+                "ENSG00000120088"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000049768", 
+                "ENSG00000185811", 
+                "ENSG00000123411"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000111424", 
+                "ENSG00000138109"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000100146", 
+                "ENSG00000135903"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000128285", 
+                "ENSG00000122585", 
+                "ENSG00000183395", 
+                "ENSG00000140564", 
+                "ENSG00000161955"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000204580", 
+                "ENSG00000119408"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000134460", 
+                "ENSG00000109471", 
+                "ENSG00000197919"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000141655", 
+                "ENSG00000120659"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000145901", 
+                "ENSG00000160307"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000001084", 
+                "ENSG00000023909"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000107165", 
+                "ENSG00000077498"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000169385", 
+                "ENSG00000160185"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000166037", 
+                "ENSG00000138685"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000117091", 
+                "ENSG00000122223"
+            ], 
+            "expansion": []
+        }, 
+        {
+            "core": [
+                "ENSG00000177663", 
+                "ENSG00000112115"
+            ], 
+            "expansion": []
+        }
+    ], 
+    "deltas": [
+        0.0003478632383402437
+    ], 
+    "linkers": [], 
+    "params": {
+        "consensus_permutations": 0, 
+        "delta": 0.00040397624824088283, 
+        "deltas": [], 
+        "display_name_file": null, 
+        "display_score_file": null, 
+        "heat_files": [
+            "./data/heatfile.json"
+        ], 
+        "heat_name": "score", 
+        "heat_permutations": 100, 
+        "min_cc_size": 2, 
+        "network_files": [
+            "./networks/omnipath/omnipath_ppr_0.42.h5"
+        ], 
+        "network_name": "omnipath", 
+        "network_permutations": 50, 
+        "num_cores": -1, 
+        "output_directory": "./data/EFO_0004208/omnipath/hotnet2", 
+        "output_hierarchy": false, 
+        "permuted_network_paths": [
+            "./networks/omnipath/permuted/omnipath_ppr_0.42_##NUM##.h5"
+        ], 
+        "verbose": 1
+    }, 
+    "stats": {
+        "2": {
+            "expected": 0.0, 
+            "observed": 27, 
+            "pval": 1.0
+        }, 
+        "3": {
+            "expected": 0.0, 
+            "observed": 13, 
+            "pval": 1.0
+        }, 
+        "4": {
+            "expected": 0.0, 
+            "observed": 4, 
+            "pval": 1.0
+        }, 
+        "5": {
+            "expected": 0.0, 
+            "observed": 4, 
+            "pval": 1.0
+        }, 
+        "6": {
+            "expected": 0.0, 
+            "observed": 3, 
+            "pval": 1.0
+        }, 
+        "7": {
+            "expected": 0.0, 
+            "observed": 3, 
+            "pval": 1.0
+        }, 
+        "8": {
+            "expected": 0.0, 
+            "observed": 3, 
+            "pval": 1.0
+        }, 
+        "9": {
+            "expected": 0.0, 
+            "observed": 3, 
+            "pval": 1.0
+        }, 
+        "10": {
+            "expected": 0.0, 
+            "observed": 2, 
+            "pval": 1.0
+        }
+    }
+}

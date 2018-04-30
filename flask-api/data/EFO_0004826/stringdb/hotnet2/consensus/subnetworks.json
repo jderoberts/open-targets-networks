@@ -1,0 +1,109 @@
+{
+    "consensus": [
+        {
+            "core": [
+                "ENSG00000121594", 
+                "ENSG00000196415", 
+                "ENSG00000177283", 
+                "ENSG00000106348", 
+                "ENSG00000223865", 
+                "ENSG00000046774", 
+                "ENSG00000158955", 
+                "ENSG00000118680", 
+                "ENSG00000237541", 
+                "ENSG00000113161", 
+                "ENSG00000185010", 
+                "ENSG00000049759", 
+                "ENSG00000174740", 
+                "ENSG00000178035", 
+                "ENSG00000114013", 
+                "ENSG00000106804", 
+                "ENSG00000113580", 
+                "ENSG00000196735", 
+                "ENSG00000197249", 
+                "ENSG00000197405", 
+                "ENSG00000102804", 
+                "ENSG00000128059", 
+                "ENSG00000156738", 
+                "ENSG00000171155"
+            ], 
+            "expansion": []
+        }
+    ], 
+    "deltas": [
+        5.397071218241206e-06
+    ], 
+    "linkers": [], 
+    "params": {
+        "consensus_permutations": 0, 
+        "delta": 2.303855544596445e-05, 
+        "deltas": [], 
+        "display_name_file": null, 
+        "display_score_file": null, 
+        "heat_files": [
+            "./data/heatfile.json"
+        ], 
+        "heat_name": "score", 
+        "heat_permutations": 100, 
+        "min_cc_size": 2, 
+        "network_files": [
+            "./networks/stringdb/stringdb_ppr_0.34.h5"
+        ], 
+        "network_name": "stringdb", 
+        "network_permutations": 50, 
+        "num_cores": -1, 
+        "output_directory": "./data/EFO_0004826/stringdb/hotnet2", 
+        "output_hierarchy": false, 
+        "permuted_network_paths": [
+            "./networks/stringdb/permuted/stringdb_ppr_0.34_##NUM##.h5"
+        ], 
+        "verbose": 1
+    }, 
+    "stats": {
+        "2": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }, 
+        "3": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }, 
+        "4": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }, 
+        "5": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }, 
+        "6": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }, 
+        "7": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }, 
+        "8": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }, 
+        "9": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }, 
+        "10": {
+            "expected": 0.0, 
+            "observed": 1, 
+            "pval": 1.0
+        }
+    }
+}
