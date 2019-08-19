@@ -1,0 +1,52 @@
+<p>Drugs found: {{data.drugs.length}}</p>
+<div class="d-flex flex-row">
+    <div style="margin-right: 50px;">
+      <label>Filter by disease:</label>
+      <select class="form-control" [(ngModel)]="indications_filter" [ngStyle]="{'width':'300px'}">
+          <option *ngFor="let item of diseaseList" [value]="item">{{item}}</option>
+      </select>
+    </div>
+    <div>
+      <label>Display indications above phase:</label>
+      <select class="form-control" [(ngModel)]="min_trial_stage" [ngStyle]="{'width':'200px'}">
+        <option [value]="1">I</option>
+        <option [value]="2">II</option>
+        <option [value]="3">III</option>
+        <option [value]="4">IV</option>
+      </select>
+    </div>
+</div>
+<br>
+<table class="table">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Targets</th>
+    <th>Type</th>
+    <th>Mechanism</th>
+    <th>Indications</th>
+  </tr>
+</thead>
+<tbody>
+  <ng-template ngFor let-drug [ngForOf]="data.drugs">
+      <tr *ngIf="indFiltered(drug.diseases)">
+            <td><a href="{{drug.url}}" target="_blank">{{drug.name}}</a></td>
+            <td>
+                    <span class="badge badge-table indigo" *ngFor="let item of drug.genes">{{item}}</span>
+            </td>
+            <td>{{drug.type}}</td>
+            <td><div *ngFor="let mech of drug.mechanisms">{{mech}}</div></td>
+            <td>
+                    <div *ngFor="let item of drug.indications" >
+                            <span *ngIf="trialCheck(item.stage);"
+                                    class="badge badge-table badge-{{trial_colour[item.stage]}}" >
+                                    <span class="text-capitalize"> {{item.efo_term}}</span>  ({{roman[item.stage]}})
+                            </span>
+                    </div>
+                    <p class="muted" *ngIf="!drug.indications.length">None</p>
+            </td>
+       </tr>
+    </ng-template>
+  <tr *ngIf="!data.drugs"><td colspan=4>No drugs found for subnetwork</td></tr>
+</tbody>
+</table>

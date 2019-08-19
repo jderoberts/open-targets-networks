@@ -1,0 +1,12 @@
+div {
+  padding:8px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+
+div:hover {
+  background:rgba(0,0,0,.04);
+  cursor:pointer;
+}

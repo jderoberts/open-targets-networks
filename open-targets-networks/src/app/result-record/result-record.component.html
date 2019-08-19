@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title"><a [routerLink]="['/disease',record._source.id]">{{ record._source.label | uppercase }}</a></h4>
+    <h5 class="card-text">{{ record._source.id }}</h5>
+    <h6 class="card-text">{{ record._source.assocs }} Open Targets associations found</h6>
+    <mdb-badge *ngFor="let syn of record._source.synonyms" primary="true">{{syn}}</mdb-badge>
+  </div>
+</div>

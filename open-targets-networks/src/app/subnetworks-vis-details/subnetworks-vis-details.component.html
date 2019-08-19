@@ -1,0 +1,15 @@
+<div id="details" class="card card-body" style="width:250px;max-width:250px;height:460px">
+  <h4 class="card-title">Association Details: <span *ngIf="selectedNode">{{selectedNode.label}}</span></h4>
+  <div *ngIf="selectedNode">
+    <p>Total Association: {{selectedNode.assoc | number:'1.1-3'}}</p>
+    <hr>
+    <p>Known Drug: {{selectedNode.known_drug | number:'1.1-3'}}</p>
+    <p>RNA Expression: {{selectedNode.rna_expression | number:'1.1-3'}}</p>
+    <p>Somatic Mutation: {{selectedNode.somatic_mutation | number:'1.1-3'}}</p>
+    <p>Genetic Association: {{selectedNode.genetic_association | number:'1.1-3'}}</p>
+    <p>Literature: {{selectedNode.literature | number:'1.1-3'}}</p>
+    <p>Animal Model: {{selectedNode.animal_model | number:'1.1-3'}}</p>
+    <p>Affected Pathway: {{selectedNode.affected_pathway | number:'1.1-3'}}</p>
+    <a href="https://www.targetvalidation.org/evidence/{{selectedNode.id}}/{{efo}}" target="_blank">Open Targets Evidence</a>
+  </div>
+</div>

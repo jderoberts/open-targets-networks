@@ -1,0 +1,31 @@
+<div class="jumbotron">
+<h4>Enter EFO ID or disease name to search.</h4>
+<div class="md-form active-indigo-2 mb-3" style="width:22vw">
+  <input class="form-control" type="text" placeholder="Search"
+     aria-label="Search" [formControl]="searchField">
+</div>
+</div>
+
+<div *ngIf="jsonResponse.length">
+  <app-result-record *ngFor="let rec of jsonResponse | slice:pageStart:pageEnd" [record]="rec"></app-result-record>
+</div>
+<nav *ngIf="jsonResponse.length">
+  <ul class="pagination pg-blue">
+    <li class="page-item">
+      <a class="page-link" aria-label="Previous" mdbWavesEffect (click)="prevPage()">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li *ngFor="let rec of responseLength; index as i"
+        class="page-item" [ngClass]="currentPage==i ? 'active' : ''">
+      <a class="page-link" mdbWavesEffect (click)="goToPage(i)">{{i+1}}</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" aria-label="Next" mdbWavesEffect (click)="nextPage()">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,4 @@
+<div (mousedown)="navigate(record._source.id)">
+  <span>{{record._source.label | titlecase }}</span>
+  <mdb-badge primary="true">{{record._source.assocs}}</mdb-badge>
+</div>

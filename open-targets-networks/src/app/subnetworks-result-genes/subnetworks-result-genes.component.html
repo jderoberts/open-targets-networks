@@ -1,0 +1,5 @@
+<p>Subnetwork size: {{data.size}}</p>
+<p>Average association score: {{data.heat | number:'1.1-3'}}</p>
+<p>Genes:</p>
+<p><span class="badge indigo" *ngFor="let item of nodeList" [ngStyle]="{'margin-right':'10px'}">{{item}} </span></p>
+

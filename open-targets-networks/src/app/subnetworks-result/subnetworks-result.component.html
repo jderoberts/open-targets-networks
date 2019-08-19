@@ -1,0 +1,39 @@
+
+<app-subnetworks-vis *ngIf="data" [data]="data[current]" [efo]="efo"></app-subnetworks-vis>
+
+<nav *ngIf="data">
+  <ul class="pagination pagination-lg pg-blue">
+    <!--  <a class="page-link" mdbRippleRadius>1 <span class="sr-only">(current)</span></a> -->
+    <li class="page-item">
+      <a class="page-link" mdbRippleRadius (click)="targetSearch = !targetSearch"><i class="fa fa-search" aria-hidden="true"></i></a>      
+    </li>
+    <li class="page-item" 
+        *ngFor="let subn of data; let i=index" [class.active]="i == current">
+      <a class="page-link" mdbRippleRadius (click)="update(i)">{{i+1}}</a></li>
+  </ul>
+  <div *ngIf="targetSearch" class="jumbotron">
+    <p>Search for target across subnetworks:</p>
+    <div class="md-form">
+      <i class="fa fa-search prefix"></i>
+      <input mdbInputDirective placeholder="Gene name or ENSG ID" 
+          type="text" name="form1" class="form-control" (change)="findTarget($event.target.value)">
+    </div>
+    <p *ngIf="targetFound">{{targetFound}}</p>
+  </div>
+</nav>
+
+<div *ngIf="data" id="subn-info" class="jumbotron">
+  <p class="lead">Subnetwork summary information</p>
+  <nav>
+    <ul class="pagination pagination-lg pg-blue">
+      <li class="page-item" [class.active]="summaryDiv == 'genes'">
+        <a class="page-link" style="font-size: 18px;"  mdbRippleRadius (click)="summaryDiv = 'genes'">Genes</a>
+      </li>
+      <li class="page-item" [class.active]="summaryDiv == 'drugs'">
+        <a class="page-link" style="font-size: 18px;" mdbRippleRadius (click)="summaryDiv = 'drugs'">Drugs</a>
+      </li>
+    </ul>
+  </nav>
+  <app-subnetworks-result-genes *ngIf="summaryDiv == 'genes'" [data]="data[current]" [nodeList]="nodeList"></app-subnetworks-result-genes>
+  <app-subnetworks-result-drugs *ngIf="summaryDiv == 'drugs'" [data]="data[current]" [diseaseList]="diseaseList"></app-subnetworks-result-drugs>
+</div>

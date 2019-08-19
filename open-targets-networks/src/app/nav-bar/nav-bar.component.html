@@ -1,0 +1,41 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+    <logo>
+        <span class="navbar-brand">Open Targets: Subnetworks</span>
+    </logo>
+    <links class="justify-content-between">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link waves-light" [ngClass]="checkPage('home')"
+                routerLink="home" mdbRippleRadius (click)="setPage('home')">
+                Home
+            </a>
+            <a class="nav-item nav-link waves-light" [ngClass]="checkPage('about')"
+                routerLink="about" mdbRippleRadius (click)="setPage('about')">
+                About
+            </a>
+            <a class="nav-item nav-link waves-light" [ngClass]="checkPage('search')"
+                routerLink="search" mdbRippleRadius (click)="setPage('search')">
+                Search
+            </a>
+        </div>
+        <!-- Search form -->
+        <form class="form-inline">
+            <div class="md-form my-0">
+                <input class="form-control mr-sm-2"
+                 type="text" placeholder="Search" [formControl]="searchField"
+                 (focus)="searchSelected=true" (blur)="searchSelected=false"
+                 (keyup.enter)="navigate(searchField.value)">
+                <div *ngIf="searchSelected" class="dropdown-content">
+                  <app-result-record-mini *ngFor="let rec of jsonResponse | slice:0:5" [record]="rec"></app-result-record-mini>
+                </div>
+            </div>
+            <div class="navbar-nav">
+                <ng-template #tTTemplate><div [innerHtml]="serviceWarning"></div></ng-template>
+
+                <span class="navbar-alert" *ngIf="serviceRunning">!</span>
+                <span class="navbar-alert navbar-alert-active" *ngIf="!serviceRunning" 
+                   [mdbTooltip]="tTTemplate" placement="bottom">!</span>
+            </div>
+        </form>
+    </links>
+</mdb-navbar>
+
